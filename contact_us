@@ -1,0 +1,192 @@
+<div id="loading_screen">
+    <img alt="loading" src="http://kodekloud.s3.amazonaws.com/sites/5447ebb66e6f641987020000/3604f5c26997bea3de504de139debcec/loading.gif"/>
+</div>
+<div  id="main_content" style="display:none">
+    <ul class="breadcrumb">
+        <li><a href="/home" data-i18n="nav.home"></a> </li>
+        <li class="active" data-i18n="nav.contact_us"></li>
+    </ul>
+    <div class="page_banner" data-i18n="nav.contact_us">
+    </div>
+    <div class="inside_page_content">
+        <div class="left_column">
+            <img class="inside_banner_image" alt="banner" src="http://assets.codecloudapp.com/sites/560065836e6f643f5d010000/ee172c1e7929fc375da7520a5f8bd873/aboutus.png"/>
+            <div class="show_mobile">
+                <p class="right_column_header" data-i18n="general.address_title">centre information</p>
+                <div id="centre_info_container_mobile">
+                    <script id="centre_info_template_mobile" type="x-tmpl-mustache/text">
+                        <p class="directory_content">{{name}}</p>
+                        <p class="directory_content">{{address1}}</p>
+                        <p class="directory_content">{{city}}, {{province_state}} {{postal_code}}</p>
+                        <br>
+                     <p class="directory_content"><strong>Michel Caumartin</strong> 
+                    <br><span data-i18n="contact_us.contact_1.title"></span>
+                    <br>(514) 381-8804 ext. 227
+                    <br><a href="mailto:mcaumartin@bentallkennedy.com">mcaumartin@bentallkennedy.com</a></p>
+                    <br>
+                    <p class="directory_content"><strong>David Wyatt </strong> 
+                    <br><span data-i18n="contact_us.contact_2.title"></span>
+                    <br>1.866.681.2715
+                    <br><a href="mailto:dwyatt@bentallkennedy.com">dwyatt@bentallkennedy.com</a></p>
+                    </script>
+                </div>
+            </div>
+            <div id="send_contact_success" class="alert alert-success" role="alert" style="display:none">
+              <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+              <span class="sr-only">Success</span>
+              <span data-i18n="contact_us.result.success.message"></span>
+             </div>
+             <div id="send_contact_error" class="alert alert-danger" role="alert" style="display:none">
+              <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+              <span class="sr-only" data-i18n="contact_us.result.error.title"></span>
+              <span data-i18n="contact_us.result.error.message"></span>
+             </div>
+            <form name="contact_form" id="contact_form" method="post">
+                <div class="row" style="margin-left:-15px;margin-right:-15px">
+                    <div class="col-sm-12 col-md-12">
+                        <h5 data-i18n="contact_us.form.intro_message"></h5>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <label for="name" data-i18n="contact_us.form.name"></label>
+                        <input name="name" id="name" class="form-control" type="text" value="" required>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <label for="email" data-i18n="contact_us.form.email"></label>
+                        <input name="email" id="email" class="form-control" type="text" value="" required>
+                    </div>
+                </div>
+                <br>
+                <div class="row" style="margin-left:-15px;margin-right:-15px">
+                    <div class="col-sm-12 col-md-12">
+                        <label for="subject" data-i18n="contact_us.form.subject"></label>
+                        <input name="subject" id="subject" class="form-control" type="text" required>
+                    </div>
+                </div>
+                <br>
+                <div class="row" style="margin-left:-15px;margin-right:-15px">
+                    <div class="col-sm-12 col-md-12">
+                        <label for="message" data-i18n="contact_us.form.message"></label>
+                        <textarea name="message" id="message" rows="8" class="form-control" required></textarea>
+                    </div>
+                    <div class="col-sm-12 col-md-12">
+                    <br>
+                        <label for="enterVerify"><span data-i18n="contact_us.form.captcha"></span><div id="verifyNum"></div></label><br>
+                        <input type="hidden" value="701469" id="verifyNumHidden" name="verifyNumHidden" />
+                        <input type="text" id="enterVerify" name="enterVerify" />
+                    </div>
+                </div>
+                
+                <div class="row" style="margin-left:-15px;margin-right:-15px">
+                        <div class="col-sm-12 col-md-12"><br/>
+                        <button id="submit" class="btn btn-primary" type="submit" data-i18n="contact_us.form.submit"></button>
+                    </div>
+                </div>
+                
+                
+                
+            </form>
+        </div>
+        <div class="right_column">
+            <p class="right_column_header" data-i18n="general.address_title">centre information</p>
+            <div id="centre_info_container">
+                <script id="centre_info_template" type="x-tmpl-mustache/text">
+                    <p class="directory_content">{{name}}</p>
+                    <p class="directory_content">{{address1}}</p>
+                    <p class="directory_content">{{city}}, {{province_state}} {{postal_code}}</p>
+                    <br>
+                     <p class="directory_content"><strong>Michel Caumartin</strong> 
+                    <br><span data-i18n="contact_us.contact_1.title"></span>
+                    <br>(514) 381-8804 ext. 227
+                    <br><a href="mailto:mcaumartin@bentallkennedy.com">mcaumartin@bentallkennedy.com</a></p>
+                    <br>
+                    <p class="directory_content"><strong>David Wyatt </strong> 
+                    <br><span data-i18n="contact_us.contact_2.title"></span>
+                    <br>1.866.681.2715
+                    <br><a href="mailto:dwyatt@bentallkennedy.com">dwyatt@bentallkennedy.com</a></p>
+                </script>
+            </div>
+            
+            
+        </div>
+    </div>
+</div>
+<script>
+        function randomgen() {
+            var rannumber='';
+    		for(ranNum=1; ranNum<=6; ranNum++){
+    			rannumber+=Math.floor(Math.random()*10).toString();
+    		}
+    		$('#verifyNum').html(rannumber);
+    		$('#verifyNumHidden').val(rannumber);
+    	}
+    	randomgen();
+      
+        
+        $('#contact_form').submit(function(e) {
+
+    		if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
+                values = [];
+                values = JSON.stringify($('#contact_form').serializeArray());
+                e.preventDefault();
+                $.ajax({
+                    url : "/api/v1/contact_us",
+                    type: "POST",
+                    data : {authenticity_token: '<%=form_authenticity_token%>' ,
+                    form_data:values},
+                    success: function(data, textStatus, jqXHR)
+                    {
+                        $('#send_contact_success').fadeIn();
+                        $('#contact_form').find("input[type=text], textarea").val("");
+                    },
+                    error: function (jqXHR, textStatus, errorThrown)
+                    {
+                        $('#send_contact_error').fadeIn();
+                    }
+                });
+
+    		    
+    		}
+    		else
+    		{
+    			alert("Please Enter Correct Verification Number");
+    			randomgen();
+    			e.preventDefault();
+    		}
+    	});
+   $(document).ready(function() {
+        function renderAll (){
+            var propertyDetails = getPropertyDetails();
+            renderPageData('#centre_info_container','#centre_info_template',propertyDetails, 'property_details')
+            renderPageData('#centre_info_container_mobile','#centre_info_template_mobile',propertyDetails, 'property_details')
+            $("#loading_screen").hide();
+            $("#main_content").show();
+            $(document).trigger('render:complete');
+        }
+
+        function renderPageData(container, template, collection, type){
+            var item_list = [];
+            var item_rendered = [];
+            var template_html = $(template).html();
+            Mustache.parse(template_html);   // optional, speeds up future uses
+            if (type == "property_details"){
+                item_list.push(collection);
+                collection = []
+                collection = item_list;
+            }
+            $.each( collection , function( key, val ) {
+                var rendered = Mustache.render(template_html,val);
+                item_rendered.push(rendered);
+    
+            });
+            
+            $(container).show();
+            $(container).html(item_rendered.join(''));
+        };
+
+        loadMallData(renderAll);  
+
+    
+  
+    });
+    
+</script>
