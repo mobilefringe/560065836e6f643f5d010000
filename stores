@@ -1,0 +1,78 @@
+<div id="loading_screen">
+    <img alt="loading" src="http://kodekloud.s3.amazonaws.com/sites/5447ebb66e6f641987020000/3604f5c26997bea3de504de139debcec/loading.gif"/>
+</div>
+<div  id="main_content" style="display:none">
+    <ul class="breadcrumb">
+        <li><a href="/home" data-i18n="nav.home"></a> </li>
+        <li class="active" data-i18n="nav.store_directory"></li>
+    </ul>
+    <div class="page_banner" data-i18n="nav.store_directory">
+    </div>
+    <div class="inside_page_content">
+        <div class="left_column">
+            <img class="inside_banner_image" alt="banner" src="http://assets.kodekloud.io/sites/562e8c436e6f642deb010000/image/png/1444769365000/Untitled-1.png"/>
+            <!--<a href="/map"><p class="right_column_header" id="mobile_centre_map_link" style="display:none">centre map</p></a><br>-->
+            <div class="mobile_cat_list" style="display:none">
+                <p class="right_column_header"  data-i18n="stores.categories"></p>
+                <div id="mobile_categories_container">
+                    <a href="#categories_container" id="mobile_view_all_link" class="cat_links directory_content" style="font-weight:bold" data-i18n="general.view_all"></a><br>
+                </div>
+            </div>
+            
+            <div class="directory_div" id="no_cat_list">
+                <p class="directory_header_name directory_name_col" data-i18n="stores.merchant_name"></p>
+                <p class="directory_header_phone directory_phone_col" data-i18n="stores.phone"></p>
+                <div class="store_list" id="store_list_container">
+                </div>
+            </div>
+            <div class="directory_div" id="store_category_list_container">
+            </div>
+        </div>
+        <div class="right_column">
+            <!--<a href="/map" id="map_link"><p class="right_column_header">centre map</p></a>-->
+            <br>
+            <p class="right_column_header" data-i18n="stores.categories"></p>
+            <div id="categories_container">
+                <a href="#categories_container" id="view_all_link" class="cat_links directory_content" style="font-weight:bold" data-i18n="general.view_all"></a>
+            </div>
+            <br>
+            <p class="right_column_header" data-i18n="general.address_title"></p>
+            <div id="centre_info_container">
+            </div>
+            
+            
+        </div>
+    </div>
+</div>
+
+<script id="category_store_list_template" type="x-tmpl-mustache/text">
+    <div id="cat{{id}}" class="cat_list_div" style="display:none">
+        <p class="directory_header_name directory_name_col">
+            <span class="primary-locale">{{name}}</span>
+            <span class="secondary-locale">{{name_2}}</span>
+        </p>
+        <p class="directory_header_phone directory_phone_col" data-i18n="stores.phone"></p>
+        
+        <div class="store_list" id="cat{{id}}_list"></div>
+    </div>
+</script>
+
+
+<script id="store_list_template" type="x-tmpl-mustache/text">
+    <a href="/stores/{{slug}}">
+        <p class="directory_content directory_name_col">{{name}}</p>
+    </a>
+    <a href="tel:{{phone}}">
+        <p class="directory_content directory_phone_col">{{phone}}</p>
+    </a>
+</script>
+
+<script id="centre_info_template" type="x-tmpl-mustache/text">
+    <p class="directory_content">{{name}}</p>
+    <p class="directory_content">{{address1}}</p>
+    <p class="directory_content">{{city}}, {{province_state}} {{postal_code}}</p>
+</script>
+
+
+
+<script src="/stores.js"></script>
