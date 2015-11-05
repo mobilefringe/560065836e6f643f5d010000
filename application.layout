@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
 <head>
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic,300italic" rel="stylesheet" type="text/css">
-<title>Les Colonnades Pointe-Claire</title>
+<title>Galeries Le Gardeur</title>
    <meta property="og:title" content="{{meta_title}}" />
    <meta property="og:description" content="{{meta_description}}" />
    <meta property="og:image" content="{{meta_img}}" />
@@ -18,7 +18,7 @@
      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-     ga('create', 'UA-68505000-1', 'auto');
+     ga('create', 'UA-50587834-50', 'auto');
      ga('send', 'pageview');
      
 </script>
@@ -32,7 +32,7 @@
 
 <script type="text/javascript" src="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/360754705c291ba7cd4a4a18102adbaf/modernizr.custom.48287.js"></script>
 <!-- favicon -->
-<link rel="shortcut icon" href="http://assets.kodekloud.io/sites/560ea0166e6f64448c010000/image/png/1443809788000/fav.png" type="image/x-icon" />
+<link rel="shortcut icon" href="http://assets.codecloudapp.com/sites/560065836e6f643f5d010000/bbd3b2e11fada4dc74c91780c173e4cf/fav.png" type="image/x-icon" />
 
 <!-- jQuery Version 1.11.0 -->
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
