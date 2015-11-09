@@ -94,7 +94,7 @@ $(document).ready(function() {
         $.each( collection , function( key, val ) {
             if (type == "stores" || type == "category_stores"){
                 if(!val.store_front_url ||  val.store_front_url.indexOf('missing.png') > -1 || val.store_front_url.length === 0){
-                        val.alt_store_front_url = "http://assets.codecloudapp.com/sites/560065836e6f643f5d010000/bbd3b2e11fada4dc74c91780c173e4cf/default.jpg"    
+                        val.alt_store_front_url = "http://assets.kodekloud.io/sites/5633d9a76e6f646b2c020000/bbd3b2e11fada4dc74c91780c173e4cf/default.jpg"    
                     } else {
                         val.alt_store_front_url = getImageURL(val.store_front_url);    
                     }
