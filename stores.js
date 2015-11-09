@@ -94,7 +94,7 @@ $(document).ready(function() {
         $.each( collection , function( key, val ) {
             if (type == "stores" || type == "category_stores"){
                 if(!val.store_front_url ||  val.store_front_url.indexOf('missing.png') > -1 || val.store_front_url.length === 0){
-                        val.alt_store_front_url = "http://kodekloud.s3.amazonaws.com/sites/54cfab316e6f6433ad020000/77c900d783abeb362232339ece231335/10dundas_default.jpg"    
+                        val.alt_store_front_url = "http://assets.codecloudapp.com/sites/560065836e6f643f5d010000/bbd3b2e11fada4dc74c91780c173e4cf/default.jpg"    
                     } else {
                         val.alt_store_front_url = getImageURL(val.store_front_url);    
                     }
