@@ -115,8 +115,8 @@
                             
                             val.store_name = store_details.name
                         } else {
-                            val.alt_promo_image_url = "http://assets.kodekloud.io/sites/5592c0a26e6f645c97010000/dfb21ac362ef8b899e54acdab20d6e4e/default.jpg"
-                            val.alt_promo_image_url_2 = "http://assets.kodekloud.io/sites/5592c0a26e6f645c97010000/dfb21ac362ef8b899e54acdab20d6e4e/default.jpg"
+                            val.alt_promo_image_url = "http://assets.codecloudapp.com/sites/560065836e6f643f5d010000/bbd3b2e11fada4dc74c91780c173e4cf/default.jpg"
+                            val.alt_promo_image_url_2 = "http://assets.codecloudapp.com/sites/560065836e6f643f5d010000/bbd3b2e11fada4dc74c91780c173e4cf/default.jpg"
                         }
                         
                     } else {
