@@ -1,0 +1,31 @@
+<div id="loading_screen">
+    <img alt="loading" src="http://kodekloud.s3.amazonaws.com/sites/5447ebb66e6f641987020000/3604f5c26997bea3de504de139debcec/loading.gif"/>
+</div>
+<div  id="main_content" style="display:none">
+    <ul class="breadcrumb">
+        <li><a href="/home" data-i18n="nav.home"></a> </li>
+        <li><a href="/home" data-i18n="nav.contact_us"></a> </li>
+        <li class="active" data-i18n="nav.find_us"></li>
+    </ul>
+    <div class="page_banner" data-i18n="nav.find_us">
+    </div>
+    <div class="inside_page_content">
+        <div class="left_column">
+            <iframe class="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1658.9997966082574!2d-73.46554579536793!3d45.75630093290837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc8e60c494189e5%3A0x9961520155657063!2s515+Boulevard+Lacombe%2C+Repentigny%2C+QC+J5Z!5e0!3m2!1sen!2sca!4v1442872244223" style="border:0" title="Map" data-i18n="general.directions">Directions</iframe>
+        </div>
+        <div class="right_column">
+            <p class="right_column_header" data-i18n="general.address_title"</p>
+            <div id="centre_info_container">
+                
+            </div>
+            
+            
+        </div>
+    </div>
+</div>
+<script id="centre_info_template" type="x-tmpl-mustache/text">
+                    <p class="directory_content">{{name}}</p>
+                    <p class="directory_content">{{address1}}</p>
+                    <p class="directory_content">{{city}}, {{province_state}} {{postal_code}}</p>
+                </script>
+<script src="/find_us.js" defer></script>
