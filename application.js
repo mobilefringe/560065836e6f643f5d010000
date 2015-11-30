@@ -285,7 +285,7 @@ $(document).ready(function() {
 	//Using i18n for localization, for more info please visit http://i18next.com/
 	i18n.init({preload: [sessionStorage.primary_locale,sessionStorage.secondary_locale],resGetPath: '../__lng__.json',fallbackLng: false }, 
 		function(t) {
-			var current_local = sessionStorage.secondary_locale;
+			var current_local = sessionStorage.primary_locale;
 			if(typeof(sessionStorage.current_locale) != 'undefined' ){
 				current_local = sessionStorage.current_locale;
 			}
