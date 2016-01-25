@@ -95,7 +95,8 @@
                     <p class="directory_content"><strong>David Wyatt </strong> 
                     <br><span data-i18n="contact_us.contact_2.title"></span>
                     <br>1.866.681.2715
-                    <br><a href="mailto:dwyatt@bentallkennedy.com">dwyatt@bentallkennedy.com</a></p>
+                    <br><a href="mailto:dwyatt@bentallkennedy.com">dwyatt@bentallkennedy.com</a>
+                    <br><span data-i18n="contact_us.contact_3.title"></span></p>
                     </script>
                     <script id="centre_info_template" type="x-tmpl-mustache/text">
                     <p class="directory_content">{{name}}</p>
@@ -110,6 +111,7 @@
                     <p class="directory_content"><strong>David Wyatt </strong> 
                     <br><span data-i18n="contact_us.contact_2.title"></span>
                     <br>1.866.681.2715
-                    <br><a href="mailto:dwyatt@bentallkennedy.com">dwyatt@bentallkennedy.com</a></p>
+                    <br><a href="mailto:dwyatt@bentallkennedy.com">dwyatt@bentallkennedy.com</a>
+                    <br><span data-i18n="contact_us.contact_3.title"></span></p>
                 </script>
 <script src="/contact_us.js"></script>
