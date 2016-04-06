@@ -256,8 +256,8 @@
           <!--<div id="social_media_wrapper"> <a href="https://www.facebook.com/10DundasEast" target="_blank"><i class="fa fa-facebook"></i><p style="display:none">facebook</p></a> <a href="https://twitter.com/10DundasEast" target="_blank"><i class="fa fa-twitter"></i><p style="display:none">twitter</p></a><a href="http://instagram.com/10dundaseast" target="_blank"><i class="fa fa-instagram"></i><p style="display:none">instagram</p></a><a href="https://www.youtube.com/user/10DundasEast" target="_blank"><i class="fa fa-youtube"></i><p style="display:none">youtube</p></a></div>-->
           <div class="hidden-xs language"><a href="#" class="en-CA">en</a> | <a href="#" class="fr-CA">fr</a></div>
           <a href="http://bentallkennedy.com/" target="_blank">
-            <img class="property_logo primary-locale" alt="logo" src="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/14d7e193a4e12033723bf919343b9d1f/bental-logo1.png"/>
-            <img class="property_logo secondary-locale" alt="logo" src="http://kodekloud.s3.amazonaws.com/sites/562e8c436e6f642deb010000/image/png/1446225770000/bental-logo_french.png" />
+            <img class="property_logo primary-locale" alt="logo" src="http://assets.codecloudapp.com/sites/564cc22c6e6f645da8030000/image/png/undefined/bental-logo2.png"/>
+            <img class="property_logo secondary-locale" alt="logo" src="http://assets.codecloudapp.com/sites/564cc22c6e6f645da8030000/image/png/undefined/bental-logo2french.png" />
         </a>
      </div>
 </header>
