@@ -45,8 +45,8 @@
 <link href="//cdn.jsdelivr.net/jquery.jreject/1.0.2/css/jquery.reject.css" rel="stylesheet" type="text/css">
 
 <!--MallMaverick v=0.3-->
-<script src="//mallmaverick.cdn.speedyrails.net/mallmaverick.js?v=0.3"></script>
-<script src="//mallmaverick.cdn.speedyrails.net/mustache_mallmaverick.js?v=0.3"></script>
+<script src="//mallmaverick.kodekloud.io/mallmaverick.js?v=0.3"></script>
+<script src="//mallmaverick.kodekloud.io/mustache_mallmaverick.js?v=0.3"></script>
 
 <script src="//cdn.jsdelivr.net/jquery.zoomooz/1.1.6/jquery.zoomooz.min.js"></script>
 
