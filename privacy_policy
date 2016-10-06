@@ -1,0 +1,78 @@
+<div id="loading_screen">
+    <img alt="loading" src="//kodekloud.s3.amazonaws.com/sites/5447ebb66e6f641987020000/3604f5c26997bea3de504de139debcec/loading.gif"/>
+</div>
+<div  id="main_content" style="display:none">
+    <ul class="breadcrumb">
+        <li><a href="/home">Home</a> </li>
+        <li class="active">privacy policy</li>
+    </ul>
+    <div class="page_banner">
+        privacy policy
+    </div>
+    <div class="inside_page_content">
+        <div class="left_column">
+            <img class="inside_banner_image" alt="banner" src="//kodekloud.s3.amazonaws.com/sites/54f756026e6f642619000000/11c6edce71b99451e7e687ced06be21f/Banner-Image-007_edited.jpg"/>
+            <section class="article-text">
+               <div class="row">
+               <p>By accessing or using this web site, you agree to the terms of the Port Street Market's Privacy Policy, as outlined below. If you do not agree to these terms, please do not access or use this site. Port Street Market reserves the right to change the Privacy Policy from time to time at its sole discretion.</p>
+                <h3>Cookies</h3><p>A "cookie" is a piece of data stored on the user's hard drive, containing information about the user. We do not use cookies on our site, but if we were to use cookies, none of them will contain any personally identifiable information. Some of our business partners use cookies on their sites. You may choose not to accept cookies by setting your browser to refuse all cookies or to notify you each time a cookie is set. If you choose to refuse cookies, however, you may not be able to use all features of our site in the future</p>
+                <h3>Surveys & Contests</h3><p>From time-to-time our site requests information from users via surveys or contests. Participation in these surveys or contests is voluntary and the user therefore has a choice whether or not to disclose this information. Information requested may include contact information (such as name and e-mail addresses  - kept indefinitely), and demographic information (such as postal code, age level and addresses , removed after 5 years ).<br>We only use this information for our purposes and do not sell this information or give any portion to our retailers or partners.  Users can be removed from our database at anytime.</p>
+                <h3>Security</h3><p>www.portstreetmarket.com uses industry standard technology and efforts to safeguard the confidentiality of your personal identifiable information. These include secure servers and firewalls. All of the user data we collect is protected against unauthorized access. Only authorized employees who need the information to perform a specific job are granted access to this information. </p>
+                <h3>Notification of Changes</h3><p>We are always improving and updating our website to further enhance your shopping experience. As a result, our policies will continue to evolve. As we implement new technology and provide new services, we will update our Privacy Policy. We encourage you to refer to this page on an ongoing basis for our most current policy and practices.</p>
+                <h3>Third Party Links</h3><p>Our site sometimes provides links to websites that are operated solely by third parties that are not under our control. This Privacy Statement applies to our site only, and is not intended to describe the privacy policies of any third party sites. </p>
+                <h3>Updating Your Personal Information</h3><p>You have the right to access and correct your personal information and privacy preferences at any time. You may access and correct your personal information and privacy preferences by writing or calling.</p>
+                <h3>Privacy Related Complaints</h3><p>If you believe that Port Street Market has not complied with this Privacy Policy with respect to your personal information, please notify us at:<br><br><stong>Privacy Concerns<br> Port Street Market<br> c/o Bentall Kennedy (Canada) LP<br> 125-130 Lakeshore Road East<br>Mississauga, ON L5G 1E5<br><br>In your letter, please describe in as much detail as possible the ways in which you believe that the www.portstreetmarket.com Privacy Policy has not been complied with. We will investigate your complaint promptly.<br><br>Please note that if you provide www.portstreetmarket.com with inconsistent privacy preferences (for example, by indicating on one occasion that third parties may contact you with marketing offers and indicating on another occasion that they may not), Port Street Market cannot guarantee that your most recent privacy preference will be honored.<br><br>Also, please note that www.portstreetmarket.com is not responsible for the content or privacy practices of non-www.portstreetmarket.com web sites to which  www.portstreetmarket.com or any other www.portstreetmarket.com web site may link. <br>Thank you for visiting www.portstreetmarket.com</p>
+               </div>
+            </section>
+        </div>
+        <div class="right_column">
+            <p class="right_column_header">centre information</p>
+            <div id="centre_info_container">
+                <script id="centre_info_template" type="x-tmpl-mustache/text">
+                    <p class="directory_content">{{name}}</p>
+                    <p class="directory_content">{{address1}}</p>
+                    <p class="directory_content">{{city}}, {{province_state}} {{postal_code}}</p>
+                </script>
+            </div>
+            
+            
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function() {
+        function renderAll (){
+            var propertyDetails = getPropertyDetails();
+            renderPageData('#centre_info_container','#centre_info_template',propertyDetails, 'property_details')
+            $("#loading_screen").hide();
+            $("#main_content").show();
+        }
+        
+    
+        function renderPageData(container, template, collection, type){
+            var item_list = [];
+            var item_rendered = [];
+            var template_html = $(template).html();
+            Mustache.parse(template_html);   // optional, speeds up future uses
+            if (type == "property_details"){
+                item_list.push(collection);
+                collection = []
+                collection = item_list;
+            }
+            $.each( collection , function( key, val ) {
+                var rendered = Mustache.render(template_html,val);
+                item_rendered.push(rendered);
+    
+            });
+            
+            $(container).show();
+            $(container).html(item_rendered.join(''));
+        };
+
+        loadMallData(renderAll);  
+
+    
+  
+    });
+    
+</script>
