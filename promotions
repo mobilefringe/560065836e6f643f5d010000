@@ -1,0 +1,65 @@
+<div id="loading_screen">
+    <img alt="loading" src="//kodekloud.s3.amazonaws.com/sites/5447ebb66e6f641987020000/3604f5c26997bea3de504de139debcec/loading.gif"/>
+</div>
+<div  id="main_content" style="display:none">
+    <ul class="breadcrumb">
+        <li><a href="/home" data-i18n="nav.home"></a> </li>
+        <li class="active" data-i18n="nav.promotions"></li>
+    </ul>
+    <div class="page_banner" data-i18n="nav.promotions">
+
+    </div>
+    <div class="inside_page_content">
+        <div class="left_column">
+            <img class="inside_banner_image" alt="banner" src="//kodekloud.s3.amazonaws.com/sites/553912c46e6f645bc2000000/5bd267c4e152fd0b4f8bdee9e724b570/promo.png"/>
+            <div class="promo_list_div" id="promo_list_container">
+                
+            </div>  
+            <section class="service_teasers" style="display:none" id="no_event_container">
+                <h2 data-i18n="promotions.no_promotions"></h2>
+            </section>
+        </div>
+        <div class="right_column">
+            <p class="right_column_header" data-i18n="general.address_title"></p>
+            <div id="centre_info_container">
+                
+            </div>
+            
+            
+        </div>
+    </div>
+</div>
+<script id="promo_list_template" type="x-tmpl-mustache/text">
+                    <div class="promo_inside_content">
+                    <div class="promo_image_div">
+                        <a href="{{alt_promo_image_url}}" rel="lightbox-gallery" title="{{name}}" class="primary-locale">
+                            <img alt="promo image" class="promo_image" src="{{alt_promo_image_url}}" />
+                        </a> 
+
+                        <a href="{{alt_promo_image_url_2}}" rel="lightbox-gallery" title="{{name}}" class="secondary-locale">
+                            <img alt="promo image" class="promo_image" src="{{alt_promo_image_url_2}}" />
+                        </a> 
+                        
+                    </div>
+                        <div class="promo_desc_box">
+                            <a href="../promotions/{{slug}}">
+                                <p class="promo_header right_column_header">
+                                    <span class="primary-locale">{{name}}</span>
+                                    <span class="secondary-locale">{{name_2}}</span>
+                                </p>
+                            </a>
+                            <p class="directory_content promo_date"><a href="/stores/{{store_detail_btn}}">{{store_name}}</a><br>{{dates}}</p>
+                            <p id="desc">
+                                <span class="primary-locale">{{description}}</span>
+                                <span class="secondary-locale">{{description_2}}</span>
+                            </p>
+                            <a href="../promotions/{{slug}}" class="btn btn-primary pull-left" data-i18n="general.read_more"></a> </div>
+                        </div>
+                    </div>
+                </script>
+<script id="centre_info_template" type="x-tmpl-mustache/text">
+                    <p class="directory_content">{{name}}</p>
+                    <p class="directory_content">{{address1}}</p>
+                    <p class="directory_content">{{city}}, {{province_state}} {{postal_code}}</p>
+                </script>
+<script src="/promotions.js"></script>
