@@ -1,0 +1,68 @@
+<style scoped>
+    .portfolio_item{
+        height:160px;
+        width:260px;
+        display:inline-block;
+        margin-bottom:17px !important;
+        margin-right:17px !important;
+    }
+    
+    @media (max-width: 767px) {
+        .portfolio_item{
+            margin-right:auto !important;
+            margin-left:auto !important;
+            display:block;
+        }  
+    }
+    
+</style>
+
+
+<div id="loading_screen">
+    <img alt="loading" src="//kodekloud.s3.amazonaws.com/sites/5447ebb66e6f641987020000/3604f5c26997bea3de504de139debcec/loading.gif"/>
+</div>
+<div  id="main_content" style="display:none">
+    <ul class="breadcrumb">
+        <li><a href="/home" data-i18n="nav.home"></a> </li>
+        <li><a href="/leasing" data-i18n="nav.leasing"></a> </li>
+        <li class="active" data-i18n="nav.photos"></li>
+    </ul>
+    <div class="page_banner">
+        Photos
+    </div>
+    <div class="inside_page_content">
+        <div class="left_column">
+            <section class="portfolio_strict" id="photo_container">
+                <div class="row isotope_portfolio_container">
+                    
+                
+                
+                
+                
+               </div>
+          </section>
+        </div>
+        <div class="right_column">
+            <p class="right_column_header" data-i18n="general.address_title">centre information</p>
+            <div id="centre_info_container">
+                
+            </div>
+            
+            
+        </div>
+    </div>
+</div>
+<script id="photo_template" type="x-tmpl-mustache/text">
+            
+                            <div class="portfolio_item"> 
+                                <a href="{{alt_url}}" rel="lightbox-gallery" title="{{name}}">
+                                    <img alt="photo{{id}}" src="{{alt_url}}"/>
+                                </a>
+                             </div>
+                    </script>
+                    <script id="centre_info_template" type="x-tmpl-mustache/text">
+                    <p class="directory_content">{{name}}</p>
+                    <p class="directory_content">{{address1}}</p>
+                    <p class="directory_content">{{city}}, {{province_state}} {{postal_code}}</p>
+                </script>
+<script src="/photos.js"></script>
