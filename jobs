@@ -1,0 +1,63 @@
+<style>
+    .promo_inside_content{
+        border-bottom:0;
+        padding-bottom:0;
+    }
+    .promo_date{
+        margin-bottom:0;
+    }
+</style>
+
+
+<div id="loading_screen">
+    <img alt="loading" src="//kodekloud.s3.amazonaws.com/sites/5447ebb66e6f641987020000/3604f5c26997bea3de504de139debcec/loading.gif"/>
+</div>
+<div  id="main_content" style="display:none">
+    <ul class="breadcrumb">
+        <li><a href="/home" data-i18n="nav.home"></a> </li>
+        <li><a href="/contact_us" data-i18n="nav.contact_us"></a> </li>
+        <li class="active" data-i18n="nav.jobs"></li>
+    </ul>
+    <div class="page_banner" data-i18n="nav.jobs">
+        Jobs
+    </div>
+    <div class="inside_page_content">
+        <div class="left_column">
+            <img class="inside_banner_image" alt="banner" src="//kodekloud.s3.amazonaws.com/sites/54edfd7a6e6f640717000000/2804b99a4a7c2ed210ec0bfcd23dfaee/Banner-Image-008_edited.jpg"/>
+            <div class="promo_list_div" id="promo_list_container">
+                
+            </div>  
+            <section class="service_teasers" style="display:none" id="no_event_container">
+                <h2 data-i18n="jobs.no_jobs"></h2>
+            </section>
+        </div>
+        <div class="right_column">
+            <p class="right_column_header" data-i18n="general.address_title"></p>
+            <div id="centre_info_container">
+               
+            </div>
+            
+            
+        </div>
+    </div>
+</div>
+<script id="promo_list_template" type="x-tmpl-mustache/text">
+                    <div class="promo_inside_content">
+                        <div class="promo_desc_box" style="width:100%">
+                            <a href="../jobs/{{slug}}">
+                                <p class="promo_header right_column_header">
+                                    <span class="primary-locale">{{name}}</span>
+                                    <span class="secondary-locale">{{name_2}}</span>
+                                </p>
+                            </a>
+                            <p class="directory_content promo_date"><a href="/stores/{{store_detail_btn}}">{{store_name}}</a><br>{{job_type}}<a href="../jobs/{{slug}}" class="btn btn-primary pull-right" style="margin-top:-17px" data-i18n="general.read_more"></a></p>
+                             </div>
+                        </div>
+                    </div>
+                </script>
+ <script id="centre_info_template" type="x-tmpl-mustache/text">
+                    <p class="directory_content">{{name}}</p>
+                    <p class="directory_content">{{address1}}</p>
+                    <p class="directory_content">{{city}}, {{province_state}} {{postal_code}}</p>
+                </script>
+<script src="/jobs.js"></script>
