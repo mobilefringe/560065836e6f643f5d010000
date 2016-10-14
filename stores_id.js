@@ -172,16 +172,12 @@ $(document).ready(function() {
                         break;
                 }
                 
-                
                 if ((val.store_front_url).indexOf('missing.png') > -1){
                     val.alt_store_front_url = "//codecloud.cdn.speedyrails.net/sites/560065836e6f643f5d010000/bbd3b2e11fada4dc74c91780c173e4cf/default.jpg"
                 } else {
                     val.alt_store_front_url = getImageURL(val.store_front_url); 
                 }
-                
                 // val.alt_store_front_url = getImageURL(val.store_front_url); 
-                
-                
                 val.hours = (getHoursForIds(val.store_hours))
                 var rendered = Mustache.render(template_html,val);
                 item_rendered.push(rendered);
@@ -211,7 +207,6 @@ $(document).ready(function() {
                     case 6:
                         val.day = $.t('app.days.saturday');
                         break;
-                    
                 }
                 if (val.open_time && val.close_time && (val.is_closed == false || val.is_closed == null)){
                     var open_time = new Date (val.open_time)
