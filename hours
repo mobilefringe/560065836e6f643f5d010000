@@ -165,7 +165,7 @@
                              if (val.close_time == "0:00 AM"){
                                 val.close_time = "12:00 AM"
                             }
-                            val.h = open_time.format("h:mm A") + " - " + close_time.format("h:mm A");
+                            val.h = open_time.format("h:mm A") + " - " + close_time.format("h:mm A")
                         } else {
                             val.h = "Closed"
                         }
