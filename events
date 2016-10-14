@@ -105,22 +105,23 @@
                     } else {
                         val.alt_promo_image_url = getImageURL(val.event_image_url);
                     }
-                    start = new Date (val.start_date);
-                    end = new Date (val.end_date);
-                    start.setDate(start.getDate()+1);
-                    end.setDate(end.getDate()+1);
-                    val.dates = (get_month(start.getMonth()))+" "+(start.getDate())+" - "+get_month(end.getMonth())+" "+end.getDate();
+                    // start = new Date (val.start_date);
+                    // end = new Date (val.end_date);
+                    // start.setDate(start.getDate()+1);
+                    // end.setDate(end.getDate()+1);
+                    // val.dates = (get_month(start.getMonth()))+" "+(start.getDate())+" - "+get_month(end.getMonth())+" "+end.getDate();
+                    
+                    var start = moment(val.start_date).tz(getPropertyTimeZone());
+                    var end = moment(val.end_date).tz(getPropertyTimeZone());
+                    val.dates = start.format("MMM D") + " - " + end.format("MMM D");
+                    
                     if (val.description.length > 110) {
                        val.description =  val.description.substring(0,100)+'...';
                     } 
-                        
                 }
-                
                 var rendered = Mustache.render(template_html,val);
                 item_rendered.push(rendered);
-    
             });
-            
             $(container).show();
             $(container).html(item_rendered.join(''));
         };
