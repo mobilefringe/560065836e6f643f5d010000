@@ -17,29 +17,25 @@ $(document).ready(function() {
         var store_promos = getPromotionsForIds(store_details.promotions);
         store_promos = store_promos.reverse();
         promo_array = []
-        $.each( store_promos , function( key, val ){
-            //  today = new Date();
-            //  webDate = new Date(val.show_on_web_date);
-            today = moment();
-            webDate = moment(val.show_on_web_date);
-            if (today >= webDate) {
-                promo_array.push(val)
-            } 
-        });
+         $.each( store_promos , function( key, val ){
+             today = new Date();
+             webDate = new Date(val.show_on_web_date);
+             if (today >= webDate) {
+                 promo_array.push(val)
+             } 
+         });
         store_promos = promo_array;
         var jobs = getJobsForIds(store_details.jobs);
         jobs = jobs.reverse();
         jobs_array = []
          $.each( jobs , function( key, val ){
-            //  today = new Date();
-            //  webDate = new Date(val.show_on_web_date);
-            today = moment();
-            webDate = moment(val.show_on_web_date);
-            if (today >= webDate) {
-                jobs_array.push(val)
-            } 
-        });
-        jobs = jobs_array;
+             today = new Date();
+             webDate = new Date(val.show_on_web_date);
+             if (today >= webDate) {
+                 jobs_array.push(val)
+             } 
+         });
+         jobs = jobs_array;
          
         store_details.name_locale = store_details.name
         if (sessionStorage.secondary_locale == sessionStorage.current_locale) {
@@ -211,26 +207,22 @@ $(document).ready(function() {
                     case 6:
                         val.day = $.t('app.days.saturday');
                         break;
+                    
                 }
-                // if (val.open_time && val.close_time && (val.is_closed == false || val.is_closed == null)){
-                //     var open_time = new Date (val.open_time)
-                //     var close_time = new Date (val.close_time)
-                //     val.open_time = convert_hour(open_time);
-                //     val.close_time = convert_hour(close_time);    
-                //     val.h = val.day+": "+val.open_time+ " - " + val.close_time;
-                // } else {
-                //     val.h = val.day+": Closed"
-                // }
-                
                 if (val.open_time && val.close_time && (val.is_closed == false || val.is_closed == null)){
-                    var open_time = moment(val.open_time).tz(getPropertyTimeZone());
-                    var close_time = moment(val.close_time).tz(getPropertyTimeZone());
-                    val.h = val.day +": " + open_time.format("hh:mm A") + " - " + close_time.format("hh:mm A");
+                    var open_time = new Date (val.open_time)
+                    var close_time = new Date (val.close_time)
+                    val.open_time = convert_hour(open_time);
+                    val.close_time = convert_hour(close_time);    
+                    val.h = val.day+": "+val.open_time+ " - " + val.close_time;
                 } else {
-                    val.h = val.day +": Closed"
+                    val.h = val.day+": Closed"
                 }
+                
+                
                 var rendered = Mustache.render(template_html,val);
                 item_rendered.push(rendered);
+                
             });
         }else {
             $.each( collection , function( key, val ) {
@@ -238,16 +230,11 @@ $(document).ready(function() {
                 //     val.alt_store_front_url = getImageURL(val.store_front_url);    
                 // }
                 if (type == "promotions"){
-                    // start = new Date (val.start_date);
-                    // end = new Date (val.end_date);
-                    // start.setDate(start.getDate()+1);
-                    // end.setDate(end.getDate()+1);
-                    // val.dates = (get_month(start.getMonth()))+" "+(start.getDate())+" - "+get_month(end.getMonth())+" "+end.getDate();
-                    
-                    var start = moment(val.start_date).tz(getPropertyTimeZone());
-                    var end = moment(val.end_date).tz(getPropertyTimeZone());{
-	                val.dates = start.format("MMM D") + " - " + end.format("MMM D");
-	                
+                    start = new Date (val.start_date);
+                    end = new Date (val.end_date);
+                    start.setDate(start.getDate()+1);
+                    end.setDate(end.getDate()+1);
+                    val.dates = (get_month(start.getMonth()))+" "+(start.getDate())+" - "+get_month(end.getMonth())+" "+end.getDate();
                     if (val.description.length > 110) {
                        val.description =  val.description.substring(0,100)+'...';
                     } 
@@ -276,8 +263,8 @@ $(document).ready(function() {
                 item_rendered.push(rendered);
                 
                 
-            }
-        });
+            });
+        }
         
         $(container).show();
         $(container).html(item_rendered.join(''));
@@ -318,7 +305,7 @@ $(document).ready(function() {
     }
     
     $(document).trigger('render:ready');
-}
+});
     
     var isMobile = ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) );
     $("#pop-over").hide();
@@ -439,4 +426,3 @@ $(document).ready(function() {
             window.location.href = "/stores/"+store_details.slug;
         }
     }
-});
