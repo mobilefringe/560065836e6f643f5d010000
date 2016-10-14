@@ -439,3 +439,4 @@ $(document).ready(function() {
             window.location.href = "/stores/"+store_details.slug;
         }
     }
+});
