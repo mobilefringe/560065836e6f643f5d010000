@@ -229,7 +229,6 @@ $(document).ready(function() {
                 } else {
                     val.h = val.day +": Closed"
                 }
-                
                 var rendered = Mustache.render(template_html,val);
                 item_rendered.push(rendered);
             });
