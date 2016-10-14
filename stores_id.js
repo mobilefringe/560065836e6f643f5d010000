@@ -277,7 +277,7 @@ $(document).ready(function() {
                 item_rendered.push(rendered);
                 
                 
-            });
+            // });
         }
         
         $(container).show();
