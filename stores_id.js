@@ -221,11 +221,11 @@ $(document).ready(function() {
                 if (val.open_time && val.close_time && (val.is_closed == false || val.is_closed == null)){
                     var open_time = moment(val.open_time).tz(getPropertyTimeZone());
                     var close_time = moment(val.close_time).tz(getPropertyTimeZone());
-                    val.h = day + ": " + open_time.format("h:mma") + " - " + close_time.format("h:mma");
+                    val.h = val.day + ": " + open_time.format("hh:mm A") + " - " + close_time.format("hh:mm A");
                 } else {
-                    val.h = val.day +": Closed"
+                    val.h = val.day + ": Closed"
                 }
-            
+                    
                 var rendered = Mustache.render(template_html,val);
                 item_rendered.push(rendered);
                 
