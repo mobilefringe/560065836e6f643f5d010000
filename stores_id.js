@@ -209,22 +209,22 @@ $(document).ready(function() {
                         break;
                     
                 }
-                // if (val.open_time && val.close_time && (val.is_closed == false || val.is_closed == null)){
-                //     var open_time = new Date (val.open_time)
-                //     var close_time = new Date (val.close_time)
-                //     val.open_time = convert_hour(open_time);
-                //     val.close_time = convert_hour(close_time);    
-                //     val.h = val.day+": "+val.open_time+ " - " + val.close_time;
-                // } else {
-                //     val.h = val.day+": Closed"
-                // }
                 if (val.open_time && val.close_time && (val.is_closed == false || val.is_closed == null)){
-                    var open_time = moment(val.open_time).tz(getPropertyTimeZone());
-                    var close_time = moment(val.close_time).tz(getPropertyTimeZone());
-                    val.h = val.day +": "+ open_time.format("hh:mm A") + " - " + close_time.format("hh:mm A");
+                    var open_time = new Date (val.open_time)
+                    var close_time = new Date (val.close_time)
+                    val.open_time = convert_hour(open_time);
+                    val.close_time = convert_hour(close_time);    
+                    val.h = val.day+": "+val.open_time+ " - " + val.close_time;
                 } else {
-                    val.h = val.day +": Closed"
+                    val.h = val.day+": Closed"
                 }
+                // if (val.open_time && val.close_time && (val.is_closed == false || val.is_closed == null)){
+                //     var open_time = moment(val.open_time).tz(getPropertyTimeZone());
+                //     var close_time = moment(val.close_time).tz(getPropertyTimeZone());
+                //     val.h = val.day +": "+ open_time.format("hh:mm A") + " - " + close_time.format("hh:mm A");
+                // } else {
+                //     val.h = val.day +": Closed"
+                // }
                 
                 var rendered = Mustache.render(template_html,val);
                 item_rendered.push(rendered);
