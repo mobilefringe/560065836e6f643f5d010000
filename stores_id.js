@@ -18,24 +18,30 @@ $(document).ready(function() {
         store_promos = store_promos.reverse();
         promo_array = []
          $.each( store_promos , function( key, val ){
-             today = new Date();
-             webDate = new Date(val.show_on_web_date);
-             if (today >= webDate) {
-                 promo_array.push(val)
-             } 
-         });
+            //  today = new Date();
+            //  webDate = new Date(val.show_on_web_date);
+             
+            today = moment();
+            webDate = momnett(val.show_on_web_date);
+            if (today >= webDate) {
+                promo_array.push(val)
+            } 
+        });
         store_promos = promo_array;
         var jobs = getJobsForIds(store_details.jobs);
         jobs = jobs.reverse();
         jobs_array = []
          $.each( jobs , function( key, val ){
-             today = new Date();
-             webDate = new Date(val.show_on_web_date);
-             if (today >= webDate) {
-                 jobs_array.push(val)
-             } 
-         });
-         jobs = jobs_array;
+            //  today = new Date();
+            //  webDate = new Date(val.show_on_web_date);
+             
+            today = moment();
+            webDate = moment(val.show_on_web_date);
+            if (today >= webDate) {
+                jobs_array.push(val)
+            } 
+        });
+        jobs = jobs_array;
          
         store_details.name_locale = store_details.name
         if (sessionStorage.secondary_locale == sessionStorage.current_locale) {
@@ -117,11 +123,9 @@ $(document).ready(function() {
             case 11:
                 month = "Dec"
                 break;
-                
         }
         return month;
     }
-    
     rpd.add(renderPageData);
     
     function renderTemplate(container, template, collection, type){
