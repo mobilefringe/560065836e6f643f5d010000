@@ -81,7 +81,6 @@
             $("#main_content").show();
         }
         
-    
         function renderPageData(container, template, collection, type){
             var item_list = [];
             var item_rendered = [];
