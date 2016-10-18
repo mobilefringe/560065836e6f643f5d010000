@@ -44,26 +44,19 @@ $(document).ready(function() {
         Mustache.parse(template_html);   // optional, speeds up future uses
         item_list.push(collection);
         $.each( item_list , function( key, val ) {
-            
-
             if (val.jobable_type == "Store") {
                 var store_details = getStoreDetailsByID(val.jobable_id);
-
                 val.store_detail_btn = store_details.slug 
                 val.store_name = store_details.name
-                
             } 
-            
             // end = new Date (val.end_date);
             // end.setDate(end.getDate()+1);
             // val.dates = get_month(end.getMonth())+" "+end.getDate();
             
             end = moment(val.end_date);
             val.dates = end.format("MMM D");
-            
             var rendered = Mustache.render(template_html,val);
             item_rendered.push(rendered);
-            
         });
         $(container).show();
         $(container).html(item_rendered.join(''));
