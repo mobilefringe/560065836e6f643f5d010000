@@ -215,7 +215,7 @@ $(document).ready(function() {
                     var close_time = moment(val.close_time).tz(getPropertyTimeZone());
                     val.h = val.day + ": " + open_time.format("h:mm A") + " - " + close_time.format("h:mm A");
                 } else {
-                    val.h = val.day+": Closed"
+                    val.h = val.day + ": Closed"
                 }
                 var rendered = Mustache.render(template_html,val);
                 item_rendered.push(rendered);
@@ -271,34 +271,32 @@ $(document).ready(function() {
         }
         
     }
-    
-    
-    
-    function convert_hour(d){
-        var h = addZero(d.getUTCHours());
-        var m = addZero(d.getUTCMinutes());
-        var s = addZero(d.getUTCSeconds());
-        if (h >= 12) {
-            if ( h != 12) {
-                h = h - 12;    
-            }
+
+    // function convert_hour(d){
+    //     var h = addZero(d.getUTCHours());
+    //     var m = addZero(d.getUTCMinutes());
+    //     var s = addZero(d.getUTCSeconds());
+    //     if (h >= 12) {
+    //         if ( h != 12) {
+    //             h = h - 12;    
+    //         }
             
-            i = "PM"
-        } else {
-            if (h == 0) { h = 12 }
-            i = "AM"
-        }
-        return h+":"+m+" "+i;
-    }
+    //         i = "PM"
+    //     } else {
+    //         if (h == 0) { h = 12 }
+    //         i = "AM"
+    //     }
+    //     return h+":"+m+" "+i;
+    // }
     
     
     
-    function addZero(i) {
-        if (i < 10) {
-            i = "0" + i;
-        }
-        return i;
-    }
+    // function addZero(i) {
+    //     if (i < 10) {
+    //         i = "0" + i;
+    //     }
+    //     return i;
+    // }
     
     $(document).trigger('render:ready');
 });
