@@ -1,7 +1,6 @@
 rpd = renderPageData;
 
 $(document).ready(function() {
-    
     function renderPageData(){
         //renders the store list by referencing the template id and the html id
         //for where to place the rendered content. See mallmaverick.js for implementation
@@ -17,26 +16,31 @@ $(document).ready(function() {
         var store_promos = getPromotionsForIds(store_details.promotions);
         store_promos = store_promos.reverse();
         promo_array = []
-         $.each( store_promos , function( key, val ){
-             today = new Date();
-             webDate = new Date(val.show_on_web_date);
-             if (today >= webDate) {
-                 promo_array.push(val)
-             } 
-         });
+        $.each( store_promos , function( key, val ){
+            // today = new Date();
+            // webDate = new Date(val.show_on_web_date);
+            
+            today = moment();
+            webDate = moment(val.show_on_web_date);
+            if (today >= webDate) {
+                promo_array.push(val)
+            } 
+        });
         store_promos = promo_array;
         var jobs = getJobsForIds(store_details.jobs);
         jobs = jobs.reverse();
         jobs_array = []
-         $.each( jobs , function( key, val ){
-             today = new Date();
-             webDate = new Date(val.show_on_web_date);
-             if (today >= webDate) {
-                 jobs_array.push(val)
-             } 
-         });
-         jobs = jobs_array;
-         
+        $.each( jobs , function( key, val ){
+            // today = new Date();
+            // webDate = new Date(val.show_on_web_date);
+            
+            today = moment();
+            webDate = moment(val.show_on_web_date);
+            if (today >= webDate) {
+                jobs_array.push(val)
+            } 
+        });
+        jobs = jobs_array;
         store_details.name_locale = store_details.name
         if (sessionStorage.secondary_locale == sessionStorage.current_locale) {
             if (store_details.name_2) {
@@ -117,11 +121,9 @@ $(document).ready(function() {
             case 11:
                 month = "Dec"
                 break;
-                
         }
         return month;
     }
-    
     rpd.add(renderPageData);
     
     function renderTemplate(container, template, collection, type){
@@ -132,10 +134,9 @@ $(document).ready(function() {
         if (type == "store_details"){
             item_list.push(collection)
             $.each( item_list , function( key, val ) {
- 
                 if (val.phone){
                     $("#phone_label").show();
-                }else {
+                } else {
                     $("#phone_label").hide();
                 }
                 if (val.email){
@@ -143,7 +144,6 @@ $(document).ready(function() {
                 } else {
                      $("#email_label").hide();
                 }
-                
                 switch(val.z_coordinate) {
                     case 0: 
                         val.z_coordinate = "B2"
@@ -167,22 +167,17 @@ $(document).ready(function() {
                         val.z_coordinate = "Level 5"
                         break;
                 }
-                
-                
                 if ((val.store_front_url).indexOf('missing.png') > -1){
                     val.alt_store_front_url = "//codecloud.cdn.speedyrails.net/sites/560065836e6f643f5d010000/bbd3b2e11fada4dc74c91780c173e4cf/default.jpg"
                 } else {
                     val.alt_store_front_url = getImageURL(val.store_front_url); 
                 }
-                
                 // val.alt_store_front_url = getImageURL(val.store_front_url); 
-                
-                
                 val.hours = (getHoursForIds(val.store_hours))
                 var rendered = Mustache.render(template_html,val);
                 item_rendered.push(rendered);
             });
-        }else if (type == "hours"){
+        } else if (type == "hours"){
             hours = getHoursForIds(collection.store_hours)
             $.each( hours , function( key, val ) {
                 switch(val.day_of_week) {
@@ -210,31 +205,37 @@ $(document).ready(function() {
                     
                 }
                 if (val.open_time && val.close_time && (val.is_closed == false || val.is_closed == null)){
-                    var open_time = new Date (val.open_time)
-                    var close_time = new Date (val.close_time)
-                    val.open_time = convert_hour(open_time);
-                    val.close_time = convert_hour(close_time);    
-                    val.h = val.day+": "+val.open_time+ " - " + val.close_time;
+                    // var open_time = new Date (val.open_time)
+                    // var close_time = new Date (val.close_time)
+                    // val.open_time = convert_hour(open_time);
+                    // val.close_time = convert_hour(close_time);    
+                    // val.h = val.day+": "+val.open_time+ " - " + val.close_time;
+                    
+                    var open_time = moment(val.open_time).tz(getPropertyTimeZone());
+                    var close_time = moment(val.close_time).tz(getPropertyTimeZone());
+                    val.h = val.day + ": " + open_time.format("hh:mm A") + " - " + close_time.format("Hh:mm A");
                 } else {
                     val.h = val.day+": Closed"
                 }
-                
-                
                 var rendered = Mustache.render(template_html,val);
                 item_rendered.push(rendered);
-                
             });
-        }else {
+        } else {
             $.each( collection , function( key, val ) {
                 // if (type == "store_details"){
                 //     val.alt_store_front_url = getImageURL(val.store_front_url);    
                 // }
                 if (type == "promotions"){
-                    start = new Date (val.start_date);
-                    end = new Date (val.end_date);
-                    start.setDate(start.getDate()+1);
-                    end.setDate(end.getDate()+1);
-                    val.dates = (get_month(start.getMonth()))+" "+(start.getDate())+" - "+get_month(end.getMonth())+" "+end.getDate();
+                    // start = new Date (val.start_date);
+                    // end = new Date (val.end_date);
+                    // start.setDate(start.getDate()+1);
+                    // end.setDate(end.getDate()+1);
+                    // val.dates = (get_month(start.getMonth()))+" "+(start.getDate())+" - "+get_month(end.getMonth())+" "+end.getDate();
+                    
+                    var start = moment(val.start_date).tz(getPropertyTimeZone());
+                    var end = moment(val.end_date).tz(getPropertyTimeZone());
+                    val.dates = start.format("MMM D") + " - " + end.format("MMM D");
+                    
                     if (val.description.length > 110) {
                        val.description =  val.description.substring(0,100)+'...';
                     } 
@@ -248,8 +249,6 @@ $(document).ready(function() {
                     }
                     $("#promo_header").show();   
                     $("#mobile_promo_header").show();  
-                    
-                    
                 }
                 if (type == "jobs") {
                     var pathArray = window.location.pathname.split( '/' );
@@ -261,11 +260,8 @@ $(document).ready(function() {
                 }
                 var rendered = Mustache.render(template_html,val);
                 item_rendered.push(rendered);
-                
-                
             });
         }
-        
         $(container).show();
         $(container).html(item_rendered.join(''));
         if (type == "store_details"){
