@@ -213,7 +213,7 @@ $(document).ready(function() {
                     
                     var open_time = moment(val.open_time).tz(getPropertyTimeZone());
                     var close_time = moment(val.close_time).tz(getPropertyTimeZone());
-                    val.h = val.day + ": " + open_time.format("hh:mm A") + " - " + close_time.format("Hh:mm A");
+                    val.h = val.day + ": " + open_time.format("h:mm A") + " - " + close_time.format("h:mm A");
                 } else {
                     val.h = val.day+": Closed"
                 }
