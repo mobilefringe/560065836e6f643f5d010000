@@ -1,0 +1,170 @@
+<script src="//kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/92b82a88144a6207ab1a5e8e0f63d3d1/craftmap.js"></script>
+<link type="text/css" rel="stylesheet" href="/stores_id.css" />
+
+<div id="loading_screen">
+    <img alt="loading" src="//kodekloud.s3.amazonaws.com/sites/5447ebb66e6f641987020000/3604f5c26997bea3de504de139debcec/loading.gif"/>
+</div>
+<div id="store_title_container">
+</div>
+<div  id="main_content" style="display:none">
+    <div class="inside_page_content">
+        <div class="left_column">
+        <img src= "//codecloud.cdn.speedyrails.net/sites/560065836e6f643f5d010000/9c54b37fc53d1d9bac9a456cc12e6df4/map.png">
+        <br><br>
+            <!--<div class="store_map" id="store_map">-->
+            
+                <!--<script id="store_deatils_map_template" type="x-tmpl-mustache">
+                    <div class="demo1">
+                        <img alt="map" src="" class="imgMap" id="map_image" />                
+                        <div class="marker" id='scroll_to_marker' data-coords="{{x_coordinate}}, {{y_coordinate}}"></div>   
+                    </div>   
+                </script> -->
+            <!--</div>-->
+            <div id="store_desc_container">
+            </div>
+            <div class="desktop_promo_divs">
+                <p class="list_section_header" style="display:none" id="promo_header" data-i18n="nav.promotions"></p>
+                <div class="promo_list_div" id="promo_list_container">
+                </div>
+                
+                <p class="list_section_header" style="display:none" id="job_header" data-i18n="nav.jobs"></p>
+                <div class="promo_list_div" id="job_list_container">
+                </div>
+            </div>
+        </div>
+        <div class="right_column">
+            <div id="store_detail_container">
+            </div>
+                            
+            <p class="right_column_header" id="hours_title" style="display:none" data-i18n="stores.hours"></p>
+            <div id="store_hours_container">
+ 
+            </div>
+            <br>
+            <div id="store_detail_container2">
+            </div>
+            
+            <div class="mobile_promo_divs" style="display:none">
+                <p class="list_section_header" style="display:none" id="mobile_promo_header" data-i18n="nav.promotions">Promotions</p>
+                <div class="promo_list_div" id="mobile_promo_list_container">
+                </div>
+                
+                <p class="list_section_header" style="display:none" id="mobile_job_header" data-i18n="nav.jobs"></p>
+                <div class="promo_list_div" id="mobile_job_list_container">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script id="store_title_template" type="x-tmpl-mustache">
+    <ul class="breadcrumb">
+        <li><a href="/home" data-i18n="nav.home"></a> </li>
+        <li><a href="/stores" data-i18n="nav.store_directory">Store Directory</a></li>
+        <li class="active">{{name_locale}}</li>
+    </ul>
+    <div class="page_banner">
+            <p class="banner_1">{{name_locale}} </p>
+            <p class="banner_2">{{z_coordinate}}</p>
+    </div>
+</script>
+
+
+<script id="store_desc_template" type="x-tmpl-mustache">
+    <p class="primary-locale">{{description}}</p>
+    <p class="secondary-locale">{{description_2}}</p>
+</script>
+
+<script id="promo_list_template" type="x-tmpl-mustache/text">
+    <div class="promo_inside_content">
+    <div class="promo_image_div">
+        <a href="{{alt_promo_image_url}}" rel="lightbox-gallery" title="{{name}}">
+            <img alt="promo image" class="promo_image" src="{{alt_promo_image_url}}" />
+        </a> 
+    </div>
+    <div class="promo_desc_box">
+        <a href="../promotions/{{slug}}"><p class="promo_header right_column_header">
+            <span class="primary-locale">{{name}}</span>
+            <span class="secondary-locale">{{name_2}}</span>
+        </p></a>
+        <p class="directory_content promo_date">{{dates}}</p>
+        <p class="primary-locale">{{description}}</p>
+        <p class="secondary-locale">{{description_2}}</p>
+        <a href="../promotions/{{slug}}" class="btn btn-primary pull-left" data-i18n="general.read_more"></a> </div>
+    </div>
+</div>
+</script>
+
+<script id="job_list_template" type="x-tmpl-mustache/text">
+    <div class="promo_inside_content">
+        <div class="promo_desc_box" style="width:100%">
+            <a href="../jobs/{{slug}}">
+                <p class="promo_header right_column_header">
+                    <span class="primary-locale"{{name}}</span>
+                    <span class="secondary-locale"{{name_2}}</span>
+                </p>
+            </a>
+            <p class="directory_content promo_date"><a href="/stores/{{store_detail_btn}}">{{store_name}}</a><br>{{job_type}}<a href="../jobs/{{slug}}" class="btn btn-primary pull-right" style="margin-top:-17px" data-i18n="general.read_more"></a></p>
+        </div>
+    </div>
+</script>
+
+<script id="store_detail_template" type="x-tmpl-mustache/text">
+    <img class="detail_logo" src="{{alt_store_front_url}}">
+    <p class="directory_content" id="mobile_desc" style="display:none">{{description}}</p>
+    <p class="right_column_header" id="phone_label" data-i18n="stores.phone"></p>
+    <p class="directory_content">{{phone}}</p>
+    <br>
+    <p class="right_column_header" id="email_label" data-i18n="stores.email"></p>
+    <p class="directory_content">{{email}}</p>
+</script>
+
+<script id="store_detail_template2" type="x-tmpl-mustache/text">
+  <a style="display:none" id="store_website_link" href="//{{website}}" target="_blank" class="btn-primary center-block btn-lg" data-i18n="stores.visit_store_site"></a> 
+</script>
+
+<script id="mobile_promo_list_template" type="x-tmpl-mustache/text">
+    <div class="promo_inside_content">
+    <div class="promo_image_div">
+        <a href="{{alt_promo_image_url}}" rel="lightbox-gallery" title="{{name}}">
+            <img alt="promo image" class="promo_image" src="{{alt_promo_image_url}}" />
+        </a> 
+    </div>
+    <div class="promo_desc_box">
+        <a href="../promotions/{{slug}}"><p class="promo_header right_column_header">{{name}}</p></a>
+        <p class="directory_content promo_date">{{dates}}</p>
+        <p class="primary-locale">{{description}}</p>
+        <p class="secondary-locale">{{description_2}}</p>
+        <a href="../promotions/{{slug}}" class="btn btn-primary pull-left" data-i18n="general.read_more"></a> </div>
+    </div>
+</div>
+</script>
+
+
+<script id="mobile_job_list_template" type="x-tmpl-mustache/text">
+   <div class="promo_inside_content">
+        <div class="promo_desc_box" style="width:100%">
+            <a href="../jobs/{{slug}}"><p class="promo_header right_column_header">{{name}}</p></a>
+            <p class="directory_content promo_date"><a href="/stores/{{store_detail_btn}}">{{store_name}}</a><br>{{job_type}}<a href="../jobs/{{slug}}" class="btn btn-primary pull-right" style="margin-top:-17px" data-i18n="general.read_more" ></a></p>
+        </div>
+    </div>
+</script>
+
+
+<script id="store_hours_template" type="x-tmpl-mustache/text">
+    <li class="directory_content" style="list-style:none">
+        <span data-i18n="{{day}}"></span>: 
+        {{#is_closed}}
+            <span data-i18n="general.closed" class="store_closed"></span>
+        {{/is_closed}}
+        {{^is_closed}}
+            {{h}}
+        {{/is_closed}}
+    </li>
+</script>
+
+<!--For more information please see //learnjs.io/blog/2013/11/30/snapsvg-resources/-->
+<script src="//cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js"></script>
+<script src="//kodekloud.s3.amazonaws.com/sites/5422419e4a616d74d9030000/e1fb5e17ab727d248230fbcb51da868f/jquery.panzoom.min.js"></script>
+ 
+<script src="/stores_id.js"></script>
