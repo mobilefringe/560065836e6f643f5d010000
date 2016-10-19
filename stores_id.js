@@ -211,9 +211,9 @@ $(document).ready(function() {
                     // val.close_time = convert_hour(close_time);    
                     // val.h = val.day+": "+val.open_time+ " - " + val.close_time;
                     
-                    var open_time = moment(val.open_time).tz(getPropertyTimeZone());
-                    var close_time = moment(val.close_time).tz(getPropertyTimeZone());
-                    val.h = val.day + ": " + open_time.format("h:mm A") + " - " + close_time.format("h:mm A");
+                    var open_time = moment(val.open_time).tz(getPropertyTimeZone()).format("h:mm A");
+                    var close_time = moment(val.close_time).tz(getPropertyTimeZone()).format("h:mm A");
+                    val.h = val.day + ": " + open_time+ " - " + close_time;
                 } else {
                     val.h = val.day + ": Closed"
                 }
