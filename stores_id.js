@@ -211,12 +211,21 @@ $(document).ready(function() {
                     // val.close_time = convert_hour(close_time);    
                     // val.h = val.day+": "+val.open_time+ " - " + val.close_time;
                     
-                    var open_time = moment(open_time).tz(getPropertyTimeZone());
-                    var close_time = moment(close_time).tz(getPropertyTimeZone());
+                    var open_time = moment(val.open_time).tz(getPropertyTimeZone());
+                    var close_time = moment(val.close_time).tz(getPropertyTimeZone());
                     val.h = val.day + ": " + open_time.format("h:mm A") + " - " + close_time.format("h:mm A");
                 } else {
                     val.h = val.day + ": Closed"
                 }
+                
+                var open_time = moment(val.open_time).tz(getPropertyTimeZone());
+                    var close_time = moment(val.close_time).tz(getPropertyTimeZone());
+                    val.h = val.day + ": Closed"
+                    
+                } else {
+                    val.h = val.day + ": " + open_time.format("h:mm A") + " - " + close_time.format("h:mm A");  
+                }
+                
                 var rendered = Mustache.render(template_html,val);
                 item_rendered.push(rendered);
             });
