@@ -158,7 +158,7 @@
             <span data-i18n="general.closed" class="store_closed"></span>
         {{/is_closed}}
         {{^is_closed}}
-            {{h}}
+            {{open_time}} - {{close_time}}
         {{/is_closed}}
     </li>
 </script>
