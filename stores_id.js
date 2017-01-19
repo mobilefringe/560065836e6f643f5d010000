@@ -236,7 +236,7 @@ $(document).ready(function() {
                         var store_details = getStoreDetailsBySlug(slug);
                         val.alt_promo_image_url = getImageURL(store_details.store_front_url);
                     } else {
-                        val.alt_promo_image_url = getImageURL(val.promo_image_url);
+                        val.alt_promo_image_url = getCloudinaryImageUrl(val.promo_image_url);
                     }
                     $("#promo_header").show();   
                     $("#mobile_promo_header").show();  
