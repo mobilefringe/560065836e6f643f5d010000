@@ -1,0 +1,366 @@
+<style>
+
+.smooth_zoom_preloader {
+	background-image: url(//kodekloud.s3.amazonaws.com/sites/54d4e9206e6f64691f000000/d9e054e28dd1bad70a952dd85777e93f/preloader.gif);
+}	
+.smooth_zoom_icons {
+	background-image: url(//kodekloud.s3.amazonaws.com/sites/54d4e9206e6f64691f000000/d9e054e28dd1bad70a952dd85777e93f/icons.png);
+}
+#zoom_container{
+    overflow:visible !important;
+}
+#zoom_container .landmarks{
+		position:absolute;
+		z-index:10;	
+		top:0px;
+		left:0px;
+		font-family: Helvetica, Arial, Verdana;
+		font-size:12px;
+		color: #ffffff;
+	}	
+	#zoom_container .landmarks .item {
+		position:absolute;		
+		text-align:center;		
+		/*display: none;	*/
+	}	
+	#zoom_container .landmarks .lable div {
+		width: 100px;
+		padding: 4px;		
+	}	
+	#zoom_container .landmarks .mark .text{
+		background-color:#6e6e6e;
+		padding:10px;
+		width:150px;
+		border-radius:5px;
+		margin-bottom:10px;
+		padding-top:12px;
+	}	
+	
+	.mark a{
+	    color:black;
+	    display:none;
+	}
+	
+	#png_map{
+	    width:2240px;
+		height: 943px;
+		min-width:2240px;
+		min-height: 943px;
+	}
+	
+	.text {
+	    color:white;
+	    font-size:16px;
+	    padding-top:2px;
+	}
+@media (max-width: 767px) {
+    #zoom_container{
+        overflow:hidden !important;
+    }
+}
+
+
+
+
+
+</style>
+<script src="//kodekloud.s3.amazonaws.com/sites/54d4e9206e6f64691f000000/d9e054e28dd1bad70a952dd85777e93f/jquery.smoothZoom.min.js"></script>
+<div id="pop-over">
+    <span class="pull-left">
+        <p id="pop-over-map-name">Default Name</p>
+        <p id="pop-over-map-phone">Phone Number</p>
+    </span>
+    <span class="pullright">
+        <img alt="arrow" src="//kodekloud.s3.amazonaws.com/sites/54612c496e6f6474ba020000/efe6c3ca0d8b7c35dc70c11b3c667cdf/arrow_green.png">
+    </span>
+</div>
+<div id="loading_screen">
+    <img alt="loading" src="//kodekloud.s3.amazonaws.com/sites/5447ebb66e6f641987020000/3604f5c26997bea3de504de139debcec/loading.gif"/>
+</div>
+<div  id="main_content" style="display:none">
+<ul class="breadcrumb">
+    <li><a href="/home">Home</a> </li>
+    <li><a href="/stores">Store Directory</a></li>
+    <li class="active">Centre Map</li>
+</ul>
+<div class="page_banner">
+    Centre Map
+</div>
+<div style="overflow:hidden;height:400px;margin:5px">
+
+
+
+
+    <select id="storelist_container" class="pull-left storelist_dd">
+            <option disabled selected>Select a Store</option>
+    </select>
+    <select id="svg_storelist_container" class="pull-left storelist_dd">
+            <option disabled selected>Select a Store</option>
+    </select>
+    <div id="zControls" class="pull-right">
+        <button class="zoom-in"><span class="glyphicon glyphicon-plus"></span></button>
+        <button class="zoom-out"><span class="glyphicon glyphicon-minus"></span></button>
+    </div>
+    <div id="map" class="panzoom-elements" style=""><img src=""></div>
+    
+    <div id="zoom_container">
+        <img id="png_map" class="png_map" alt="center map" src="" width="2240" height="943"/>
+    
+        <div class="landmarks" data-show-at-zoom="100" data-allow-drag="true">
+            
+	    </div>    
+    </div>
+    
+</div>
+</div>
+
+
+<!--For more information please see //learnjs.io/blog/2013/11/30/snapsvg-resources/-->
+<script src="//cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js"></script>
+<script src="//kodekloud.s3.amazonaws.com/sites/5422419e4a616d74d9030000/e1fb5e17ab727d248230fbcb51da868f/jquery.panzoom.min.js"></script>
+<!--<script src="//cdn.jsdelivr.net/jquery.transform/0.1/jquery.transform2d.js"></script>-->
+<script>
+    $(document).ready(function() {
+        function renderAll (){
+            var stores = getStoresList();
+            // renderPageData('#landmark_container','#landmark_template',stores)
+            
+            $("#loading_screen").hide();
+            $("#main_content").show();
+            // specify the type of map here. "png" or "svg"
+            var maptype = "svg"
+            renderMap(maptype);
+            
+            
+           
+        }
+        
+        function renderStoreList(stores){
+            for(var i = 0; i < stores.length;i++){
+                // stores[i].x_coordinate = stores[i].x_coordinate - 10;
+                // stores[i].y_coordinate = stores[i].y_coordinate - 35;
+                $("#storelist_container").append('<option value="'+stores[i].x_coordinate+','+stores[i].y_coordinate+','+stores[i].id+'">'+stores[i].name+'</option>') 
+                $("#svg_storelist_container").append('<option value="'+stores[i].x_coordinate+','+stores[i].y_coordinate+','+stores[i].svgmap_region+'">'+stores[i].name+'</option>') 
+
+            }
+            
+            
+        }
+        
+        function renderPageData(container, template, collection){
+            var item_list = [];
+            var item_rendered = [];
+            var template_html = $(template).html();
+            Mustache.parse(template_html);   // optional, speeds up future uses
+            $.each( collection , function( key, val ) {
+                val.x_coordinate = val.x_coordinate - 35;
+                val.y_coordinate = val.y_coordinate + 5;
+                var rendered = Mustache.render(template_html,val);
+                item_rendered.push(rendered);
+    
+            });
+            
+            if (container == "#storelist_container") {
+                
+            } else {
+               $(container).show(); 
+            }
+            
+            
+            $(container).html(item_rendered.join(''));
+        };
+        
+        function renderMap(maptype){
+        var isMobile = ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) );
+        var didPanZoom = false;
+        if(navigator.appVersion.indexOf("MSIE 9.") == -1){
+            $('#map').bind('mousemove', function(e){
+                //console.log(e.pageX+","+e.pageY);
+               $('#pop-over').css({'top':e.pageY+20,'left':e.pageX-70});
+            });
+            var propertyDetails = getPropertyDetails();
+            
+            var s = Snap("#map");
+            var stores = getStoresList();
+            if (maptype == "svg"){
+                $(".png_map").hide();
+                $("#storelist_container").hide()
+                Snap.load(getSVGMapURL(), function (f) {
+                    $.each( stores, function( key, value ) {
+                        if(value.svgmap_region != null && typeof(value.svgmap_region)  != 'undefined'){
+                            var svg_id = "#" + value.svgmap_region;
+                            f.select(svg_id).mouseover(function() {
+                                if(typeof(value) != 'undefined' && value != null){
+                                    this.addClass("map-mouse-over");
+                                    $("#pop-over").show();
+                                    $("#pop-over-map-name").html(value.name);
+                                    $("#pop-over-map-phone").html(value.phone);
+                                }
+                                          
+                            });
+                                
+                            //add the mouse up handler for hiding the pop over when done hovering
+                            f.select(svg_id).mouseout(function() {
+                                this.removeClass("map-mouse-over");
+                                $("#pop-over").hide(0);
+                                
+                            });
+                                
+                            //add the mouse up function for when the user clicks a store
+                            f.select(svg_id).mouseup(function() {
+                                
+                                if(!isMobile && !didPanZoom){
+                                    
+                                    goToStore(value);
+                                }
+                                didPanZoom = false;
+                                      
+                            });
+                        }
+                    });
+                    s.append(f.select("svg"));
+                });
+                
+                
+                var startingMapTransform = 'scale(1)';
+                var startingPanX = 0;
+                var startingPanY = 0;
+                if(isMobile) {
+                        startingMapTransform = 'scale(.5)';
+                        startingPanX = 0;
+                        startingPanY = 0;
+                }
+                
+                $( "#page_content" ).fadeIn( "fast", function() {
+                    var panzoom = $("#map").panzoom({
+                        cursor: "move",
+                        increment: 0.5,
+                        minScale: 0.5,
+                        maxScale: 2,
+                        transition: true,
+                        duration: 150,
+                        easing: "ease-in-out",
+                        $zoomIn: $('.zoom-in'),
+                        $zoomOut: $('.zoom-out'),
+                        $zoomRange: $('.zoom-range'),
+                        startTransform: startingMapTransform
+                        
+            
+                    });
+                    $("#map").panzoom("pan", startingPanX, startingPanY, { relative: true });
+                    
+                    panzoom.on('panzoomchange', function(e, panzoom, matrix, changed) {
+                      didPanZoom = true;
+                    });
+                    
+                    panzoom.on('panzoomend', function(e, panzoom, matrix, changed) {
+                      didPanZoom = false;
+                    });
+                });
+                renderStoreList(stores);
+               
+            } else {
+                // $("#zControls").hide();
+                var propertyDetails = getPropertyDetails();
+                $(".panzoom-elements").hide();
+                $("#zControls").hide();
+                $("#png_map").attr("src", getPNGMapURL())
+                if(isMobile) {
+                    initial_zoom = 15;
+                    zoom_min = 15
+                } else {
+                    initial_zoom = 40;
+                    zoom_min = 40;
+                }
+                jQuery(function($){
+            		$('#png_map').smoothZoom({
+            		    zoom_MAX: "300",
+            		    initial_ZOOM: initial_zoom,
+            		    zoom_MIN: zoom_min,
+            		    animation_SMOOTHNESS: 10,
+    	     	        initial_POSITION: "0 0",
+            	    	pan_BUTTONS_SHOW: "NO",
+            	    	zoom_OUT_TO_FIT: "NO",
+            	     	button_SIZE: 34,
+            	        button_ALIGN: "top right",    
+            	     	container: 'zoom_container',
+            	     	responsive: true,
+            	     	responsive_maintain_ratio: false
+            		});
+                });
+                
+                renderStoreList(stores)
+            }
+
+               
+            }else{
+                $('#loading').hide();
+                $('#zControls').hide();
+                $('#map').hide();
+                $( "#page_content" ).fadeIn( "fast");
+            }
+        }
+        
+        
+   
+    function goToStore(store_details){
+        if(typeof(store_details) != 'undefined' && store_details != null){
+            window.location.href = "/stores/"+store_details.slug;
+        }
+    }
+
+    function getSVGMapURL(){
+        initData();
+        var mallDataJSON = JSON.parse(getStorage().mallData);
+        return 'https://mallmaverick.cdn.speedyrails.net' + mallDataJSON.property.svgmap_url;
+    }
+    
+    $("#storelist_container").on('change', function() {
+        
+        var isMobile = ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) );
+        coords = this.value.split(",");
+        var zoomData = $('#png_map').smoothZoom('getZoomData');
+        x_coord = parseInt(coords[0])
+        y_coord = parseInt(coords[1])
+        name = $("#storelist_container option:selected").text();
+        $('#png_map').smoothZoom('removeLandmark')
+        if (isMobile) {
+            $('#png_map').smoothZoom('focusTo', {x:x_coord, y:y_coord, zoom:200});    
+        } else {
+            $('#png_map').smoothZoom('focusTo', {x:x_coord, y:y_coord, zoom:300});
+        }
+        
+        $('#png_map').smoothZoom('addLandmark', 
+			[
+			'<div class="item mark" data-show-at-zoom="0" data-position="'+x_coord+','+y_coord+'">\
+				<div>\
+					<div class="text">\
+					<strong>'+name+'</strong>\
+				</div>\
+				<img src="//kodekloud.s3.amazonaws.com/sites/54cfab316e6f6433ad020000/530d3a9b7bc13ce4a511089c23463f99/10dundas_pin.png" width="40px" height="59px" alt="marker" />\
+				</div>\
+			</div>'
+			]
+		);
+        
+    });
+    
+     $("#svg_storelist_container").on('change', function() {
+        coords = this.value.split(","); 
+        id =  (coords[2])
+        x = parseInt(coords[0]) - 11
+        y = parseInt(coords[1]) - 44
+        var s = Snap("#map");
+        s.select("#"+id).animate({ fill: 'red' }, 200);
+        var matrix =  $("#map").panzoom("getMatrix");
+        
+        $("#map").panzoom("pan",x ,y, { relative: false });
+         
+     });
+    
+        loadMallData(renderAll);  
+    });
+    
+    
+    
+</script>
