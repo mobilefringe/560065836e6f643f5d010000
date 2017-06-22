@@ -142,7 +142,6 @@ $(document).ready(function() {
 
 
     function render_category_stores(){
-        
         var category_stores = [];
         var item_rendered = [];
         var all_stores = getStoresList();
@@ -159,7 +158,6 @@ $(document).ready(function() {
             }
         }
 
-        
         Mustache.parse(template_html);
         for (i = 0; i < all_categories.length; i++) {
             var stores_per_cat = [];
