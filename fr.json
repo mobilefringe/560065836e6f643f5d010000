@@ -1,0 +1,174 @@
+{
+    "app" : {
+		"powered_by" : "Alimenté par",
+		"copywrite" : "©2017 Galeries Le Gardeur Tous droits réservés",
+		"privacy_policy" : "Politique de confidentialité",
+		"days" : {
+			"monday"    : "Lundi",
+			"tuesday"   : "Mardi",
+			"wednesday" : "Mercredi",
+			"thursday"  : "Jeudi",
+			"friday"    : "Vendredi",
+			"saturday"  : "Samedi",
+			"sunday"    : "Dimanche"
+		}
+	},
+	
+	"nav" : {
+		"home" : "Home",
+		"store_directory": "MAGASINS",
+		"promotions": "PROMOTIONS",
+		"leasing": "BAUX",
+		"photos" : "PHOTOS",
+		"find_us" : "NOUS TROUVER",
+		"contact_us" : "NOUS JOINDRE",
+		"about_us" : " À propos de nous",
+		"jobs" : " Emplois"
+	},
+
+
+	"home_page" : {
+		"welcome" : {
+			"title": "BIENVENUE CHEZ FAUBOURG BOIS-FRANC!",
+			"message" : "Located on the corner of Brunswick Boulevard and St. Jean Boulevard in a busy retail node, this highly visible retail property is easily accessible and convenient. The retail mix offer strong destination retailers and popular restaurants."
+		}
+	},
+	
+	"stores" : {
+		"merchant_name" : "Nom du commerçant",
+		"phone" : "Téléphone",
+		"categories" : "CATÉGORIES",
+		"email" : "Email",
+		"hours" : "heurs",
+		"visit_store_site" : "Visiter le site du magasin",
+		"view_store_details":"Détails en magasin"
+		
+		
+	},
+	"jobs" : {
+	    "closing_date":"Échéance: ",
+	    "contact_name":"Nom du contact: ",
+	    "contact_phone":"Téléphone: ",
+	    "contact_email":"Email: ",
+	   "store_details":"Détails en magasin",
+	   "no_jobs":"Il n’y a aucun emploi vacant pour le moment. Veuillez revenir plus tard."
+	},
+	"promotions" : {
+		"no_promotions" : "Il n’y a aucune promotion en ce moment. Veuillez revenir plus tard."
+	},
+
+	"leasing" : {
+		"download_site_plan" : "Click to download site plan PDF",
+		
+		"market_summary" : {
+			"title" : "Market Summary",
+			"content" : "Located in the south-east end of Waterloo, Westside Marketplace offers a wide range of services, food, and fashion.",
+			"total_gla" : "Total GLA:  ",
+			"gla_info" : "Retail 74,213 square feet"
+		},
+
+		"marjor_tenants" : {
+			"title" : "Major Tenants:",
+			"tenant_1" : "LCBO",
+			"tenant_2" : "Goodness Me",
+			"tenant_3" : "Shoppers Drug Mart"
+		},
+
+		"ancillary" : {
+			"title" : "Ancillary: ",
+			"content" : "34,558 square feet (25 Stores & Services)"
+		},
+
+		"demograhics" : {
+			"title" : "Demographics:",
+			"data_1" : "1km",
+			"data_2" : "3km",
+			"data_3" : "5km"
+		},
+
+		"total_population" : {
+			"title" : "Total Population:",
+			"data_1" : "4,634",
+			"data_2" : "41,587",
+			"data_3" : "103,853"
+		},
+
+		"total_households" : {
+			"title" : "Total Households:",
+			"data_1" : "1,490",
+			"data_2" : "13,740",
+			"data_3" : "37,703"
+		},
+
+		"household_income" : {
+			"title" : "Household Average Income:",
+			"data_1" : "$111,800",
+			"data_2" : "$126,407",
+			"data_3" : "$97,528"
+		},
+
+		"inqueries"  : {
+			"title" : "For Leasing Inquiries Contact:",
+			"name" : "Garnet Peirson",
+			"position" : "Director of Leasing"
+		}
+	},
+
+	"contact_us" : {
+		"contact_1" : {
+			"title" : "Directeur général "
+		},
+
+		"contact_2" : {
+			"title" : "Vice-président principal, Location au détail*"
+		},
+		"contact_3" : {
+			"title" : "*Représentant de commerce"
+		},
+
+		"result" : {
+			"success" : {
+				"title" : "Succès",
+				"message" : "Merci de nous contacter."
+			},
+
+			"error" : {
+				"title" : "Error:",
+				"message" : "Il y avait une erreur en essayant de soumettre votre demande. Veuillez réessayer."
+			}
+		},
+
+		"form" : {
+			"intro_message" : "Vos commentaires nous tiennent à cœur. Envoyez-nous vos commentaires ou questions en remplissant le formulaire de contact ci-dessous.",
+			"name" : "Nom",
+			"email" : "Adresse électronique",
+			"subject" : "Objet",
+			"message" : "Message",
+			"captcha" : "Saisissez le numéro suivant ci-dessous pour continuer: ",
+			"submit" : "Transmettre "
+		}
+
+	},
+
+	"pages" : {
+		"404" : {
+    		"title_1" : "OH NO! ",
+    		"title_1_bold" : "error 404",
+    		"message_1" : "we are really sorry but the page you requested cannot be found.",
+    		"title_2" : "error 404 is nothing to really worry about...",
+    		"message_2" : "you may have mis-typed the URL, please check your spelling and try again."
+		}
+	},
+
+	"general" : {
+		"view_all" : "Afficher tout",
+		"address_title" : "INFORMATION SUR LE CENTRE",
+		"read_more" : "En savoir plus",
+		"closed" : "Fermé",
+		"view" : "Vue",
+		"search_placeholder":"Chercher",
+		"results":"résultats"
+	}
+	
+	
+}
