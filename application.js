@@ -257,13 +257,9 @@ $(document).ready(function() {
 	$('.fr-CA').click(function(){
 		$('.langSelect').removeClass('langSelect');
 		$(this).addClass('langSelect');
-
 		setSecondaryLanguage();
-
         renderPageData.render();
-		
 	});
-
 
 	$(document).bind('render:complete', function(){
 		refreshCurrentLanguage();
@@ -294,7 +290,6 @@ $(document).ready(function() {
 			$('.en-CA').removeClass('langSelect');
         }
     });
-    
     
 	$('.close-search').click(function(){
 		$('#search_results').hide();
