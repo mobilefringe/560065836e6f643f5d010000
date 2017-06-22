@@ -68,19 +68,6 @@ function toggle_submenu(id){
 	}
 }
 
-// function setPrimaryLanguage(){
-// 	sessionStorage.setItem('current_locale', sessionStorage.primary_locale);
-
-// 	i18n.setLng(sessionStorage.primary_locale, function(t) {
-// 		$(document).i18n();
-// 	});
-
-// 	$('.secondary-locale').hide(); // Shows
-// 	$('.primary-locale').show();
-// 	$("#search_input").attr("placeholder", i18n.t("general.search_placeholder"));
-// 	$("#search_input_mobile").attr("placeholder", i18n.t("general.search_placeholder"));
-// }
-
 function setPrimaryLanguage(){
     i18n.setLng(Cookies.get('primary_locale'), function(t) {
         $(document).i18n();
@@ -92,19 +79,6 @@ function setPrimaryLanguage(){
     $("#search_input_mobile").attr("placeholder", i18n.t("general.search_placeholder"));
 }
 
-
-
-
-// function refreshCurrentLanguage() {
-// 	i18n.setLng(sessionStorage.current_locale, function(t) {
-// 		$(document).i18n();
-// 	});
-	
-// 	$('.primary-locale').toggle(sessionStorage.primary_locale == sessionStorage.current_locale);
-// 	$('.secondary-locale').toggle(sessionStorage.secondary_locale == sessionStorage.current_locale);
-// }
-
-
 function refreshCurrentLanguage() {
 	i18n.setLng(Cookies.get('current_locale'), function(t) {
 		$(document).i18n();
@@ -112,17 +86,6 @@ function refreshCurrentLanguage() {
 	$('.primary-locale').toggle(Cookies.get('primary_locale') == Cookies.get('current_locale'));
 	$('.secondary-locale').toggle(Cookies.get('secondary_locale') == Cookies.get('current_locale'));
 }
-
-// function setSecondaryLanguage(){
-// 	sessionStorage.setItem('current_locale', sessionStorage.secondary_locale);
-// 	i18n.setLng(sessionStorage.secondary_locale, function(t) {
-// 		$(document).i18n();
-// 	});
-// 	$('.secondary-locale').show(); // Shows
-// 	$('.primary-locale').hide();
-// 	$("#search_input").attr("placeholder", i18n.t("general.search_placeholder"));
-// 	$("#search_input_mobile").attr("placeholder", i18n.t("general.search_placeholder"));
-// }
 
 function setSecondaryLanguage(){
     i18n.setLng(Cookies.get('secondary_locale'), function(t) {
@@ -134,10 +97,6 @@ function setSecondaryLanguage(){
     $("#search_input").attr("placeholder", i18n.t("general.search_placeholder"));
     $("#search_input_mobile").attr("placeholder", i18n.t("general.search_placeholder"));
 }
-
-
-
-
 
 function showSearchResults(){
 	$('#search_results').show();
