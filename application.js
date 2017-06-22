@@ -104,6 +104,15 @@ function refreshCurrentLanguage() {
 	$('.secondary-locale').toggle(sessionStorage.secondary_locale == sessionStorage.current_locale);
 }
 
+
+function refreshCurrentLanguage() {
+	i18n.setLng(Cookies.get('current_locale'), function(t) {
+		$(document).i18n();
+	});
+	$('.primary-locale').toggle(Cookies.get('primary_locale') == Cookies.get('current_locale'));
+	$('.secondary-locale').toggle(Cookies.get('secondary_locale') == Cookies.get('current_locale'));
+}
+
 // function setSecondaryLanguage(){
 // 	sessionStorage.setItem('current_locale', sessionStorage.secondary_locale);
 // 	i18n.setLng(sessionStorage.secondary_locale, function(t) {
