@@ -95,14 +95,14 @@ function setPrimaryLanguage(){
 
 
 
-function refreshCurrentLanguage() {
-	i18n.setLng(sessionStorage.current_locale, function(t) {
-		$(document).i18n();
-	});
+// function refreshCurrentLanguage() {
+// 	i18n.setLng(sessionStorage.current_locale, function(t) {
+// 		$(document).i18n();
+// 	});
 	
-	$('.primary-locale').toggle(sessionStorage.primary_locale == sessionStorage.current_locale);
-	$('.secondary-locale').toggle(sessionStorage.secondary_locale == sessionStorage.current_locale);
-}
+// 	$('.primary-locale').toggle(sessionStorage.primary_locale == sessionStorage.current_locale);
+// 	$('.secondary-locale').toggle(sessionStorage.secondary_locale == sessionStorage.current_locale);
+// }
 
 
 function refreshCurrentLanguage() {
