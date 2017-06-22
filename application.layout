@@ -1,45 +1,50 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
-<link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic,300italic" rel="stylesheet" type="text/css">
-<title>Galeries Le Gardeur</title>
-   <meta property="og:title" content="{{meta_title}}" />
-   <meta property="og:description" content="{{meta_description}}" />
-   <meta property="og:image" content="{{meta_img}}" />
-   <meta charset="utf-8" />
-   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-   <meta name="viewport" content="width=device-width, initial-scale=1" />
-   <meta name="description" content="{{meta_description}}" />
-   <meta name="keywords" content="{{meta_keywords}}" />
-   <meta name="author" content="" />
-   <META HTTP-EQUIV="Pragma" CONTENT="no-cache" />
-<script>
-     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-     ga('create', 'UA-50587834-50', 'auto');
-     ga('send', 'pageview');
-     
-</script>
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="//kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/60cb7d89e157debbb7914a941327ad2c/animate.css" rel="stylesheet" type="text/css">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.3.0/flexslider.css" rel="stylesheet">
-<link rel="stylesheet" href="//kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/60cb7d89e157debbb7914a941327ad2c/prettyPhoto.css" type="text/css" media="screen">
-<link href="/application.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic,300italic" rel="stylesheet" type="text/css">
 
-<script type="text/javascript" src="/console.js"></script>
-<script type="text/javascript" src="//kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/360754705c291ba7cd4a4a18102adbaf/modernizr.custom.48287.js"></script>
-<!-- favicon -->
-<link rel="shortcut icon" href="//codecloud.cdn.speedyrails.net/sites/560065836e6f643f5d010000/bbd3b2e11fada4dc74c91780c173e4cf/fav.png" type="image/x-icon" />
+    <title>Galeries Le Gardeur</title>
+   
+    <meta property="og:title" content="{{meta_title}}" />
+    <meta property="og:description" content="{{meta_description}}" />
+    <meta property="og:image" content="{{meta_img}}" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="{{meta_description}}" />
+    <meta name="keywords" content="{{meta_keywords}}" />
+    <meta name="author" content="" />
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache" />
 
-<!-- jQuery Version 1.11.0 -->
-<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-50587834-50', 'auto');
+        ga('send', 'pageview');
+    </script>
+    
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<script src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/application/x-javascript/1468507772000/moment.min.js"></script>
-<script src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/application/x-javascript/1468507661000/moment-timezone-with-data.min.js"></script>
+    <link href="//kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/60cb7d89e157debbb7914a941327ad2c/animate.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.3.0/flexslider.css" rel="stylesheet">
+    <link rel="stylesheet" href="//kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/60cb7d89e157debbb7914a941327ad2c/prettyPhoto.css" type="text/css" media="screen">
+    <link href="/application.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <script type="text/javascript" src="/console.js"></script>
+    <script type="text/javascript" src="//kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/360754705c291ba7cd4a4a18102adbaf/modernizr.custom.48287.js"></script>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="//codecloud.cdn.speedyrails.net/sites/560065836e6f643f5d010000/bbd3b2e11fada4dc74c91780c173e4cf/fav.png" type="image/x-icon" />
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <script src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/application/x-javascript/1468507772000/moment.min.js"></script>
+    <script src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/application/x-javascript/1468507661000/moment-timezone-with-data.min.js"></script>
 
 <!--Mustache is a client side templating engine https://github.com/janl/mustache.js/ -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
@@ -270,95 +275,91 @@
 
 <footer>
     <section id="footer_teasers_wrapper">
-        
         <div class="container">
             <div class="footer_div">
-            <!--<div class="footer_teaser" style="margin-right:195px">-->
-            <!--    <h3 class="footer_text" style="font-size:17px;width:300px">Sign up and save</h3>-->
-            <!--    <p class="footer_text" style="width:300px;font-size:17px">Join our list and stay connected to be the first to hear about special sales & exclusive events!</p>-->
-            <!--    <form action="//mobilefringe.createsend.com/t/d/s/ijjitl/" method="post" id="subForm">-->
-            <!--        <label for="fieldEmail" style="display:none"> subscribe email </label>-->
-            <!--        <input style="width:290px" class="search_input" id="fieldEmail" name="cm-ijjitl-ijjitl" type="email" required placeholder="enter email" /> -->
-            <!--        <div class="checkbox footer_text" style="width:300px">-->
-            <!--            <span>-->
-            <!--            <label for="agree_terms" style="display:none">Agree Terms</label>-->
-            <!--            <input type="checkbox" class="info_check" id="agree_terms" style="margin-left:-15px; width:15px" required/>&nbsp;I agree to receive emails from Alpine Centre-->
-            <!--            </span>-->
-            <!--        </div>-->
-            <!--        <button class="btn btn-default feature-item-button"  data-i18n="general.submit">Submit</button>-->
-            <!--        <br>-->
-            <!--    </form>-->
-            <!--</div>-->
+                <!--<div class="footer_teaser" style="margin-right:195px">-->
+                <!--    <h3 class="footer_text" style="font-size:17px;width:300px">Sign up and save</h3>-->
+                <!--    <p class="footer_text" style="width:300px;font-size:17px">-->
+                <!--        Join our list and stay connected to be the first to hear about special sales & exclusive events!-->
+                <!--    </p>-->
+                <!--    <form action="//mobilefringe.createsend.com/t/d/s/ijjitl/" method="post" id="subForm">-->
+                <!--        <label for="fieldEmail" style="display:none"> subscribe email </label>-->
+                <!--        <input style="width:290px" class="search_input" id="fieldEmail" name="cm-ijjitl-ijjitl" type="email" required placeholder="enter email" /> -->
+                <!--        <div class="checkbox footer_text" style="width:300px">-->
+                <!--            <span>-->
+                <!--                <label for="agree_terms" style="display:none">Agree Terms</label>-->
+                <!--                <input type="checkbox" class="info_check" id="agree_terms" style="margin-left:-15px; width:15px" required/>&nbsp;I agree to receive emails from Alpine Centre-->
+                <!--            </span>-->
+                <!--        </div>-->
+                <!--        <button class="btn btn-default feature-item-button"  data-i18n="general.submit">Submit</button>-->
+                <!--        <br>-->
+                <!--    </form>-->
+                <!--</div>-->
                 <div class="footer_teaser">
-                    <div id="footer_container">
-                    </div>
+                    <div id="footer_container"></div>
                     <div style="height:30px;position:relative">
                         <label for="search_input" style="display:none">Search</label>
-                        <input style="color:black;width:265px" type="text" id="search_input" class="search_input" placeholder="Search"><button class="search_button"><img alt="Search" src="//kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/70483e4f30054855ef30b8872dc7948d/icon_search.png"/></button>
+                        <input style="color:black;width:265px" type="text" id="search_input" class="search_input" placeholder="Search">
+                        <button class="search_button">
+                            <img alt="Search" src="//kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/70483e4f30054855ef30b8872dc7948d/icon_search.png"/>
+                        </button>
                     </div>
                     <div class="search-results" id="search_results" style="display:none">
-
-                    
                         <ul class="list-group" >
-                            
                             <li>
-                            <a  class="close-search list-group-item" style="color:black;font-weight:bold">
-                                <small>
-                                    <span class="search-results-count">{{count}} results found.</span>&nbsp;<span data-i18n="general.results"></span> 
-                                </small>
-                            </a>
+                                <a  class="close-search list-group-item" style="color:black;font-weight:bold">
+                                    <small>
+                                        <span class="search-results-count">{{count}} results found.</span>&nbsp;<span data-i18n="general.results"></span>
+                                    </small>
+                                </a>
                             </li>
                             <li>
-                            <div id="search_results_items" class="search-results-items" style="">
-                            <!--RENDERED BY renderSearchResultsTemplate(..) -->
-                            </div>
-                            </li>
-                            <li>
-                           
+                                <div id="search_results_items" class="search-results-items" style="">
+                                <!--RENDERED BY renderSearchResultsTemplate(..) -->
+                                </div>
                             </li>
                         </ul>
                     </div>
                  </div>
             </div>
         </div>
-        
-        
     </section>
-    
     <section class="site-map-section">
         <div class="bottom-site-map">
             <ul style="margin-bottom:0;padding:0">
                 <li>
                     <a href="/stores" data-i18n="nav.store_directory"></a>
                 </li>
-               
                 <li>
                     <a href="/promotions" data-i18n="nav.promotions"></a>
                 </li>
                 <li>
                     <a href="/leasing" data-i18n="nav.leasing"></a>
                 </li>
-                 <li>
+                <li>
                     <a href="/find_us" data-i18n="nav.find_us"></a>
                 </li>
                 <li>
                     <a href="/contact_us" data-i18n="nav.contact_us"></a>
                 </li>
-                
             </ul>
         </div>
     </section>
-      <section class="copyright">
+    <section class="copyright">
            <div class="container">
                 <div class="row">
                     <div class="col-sm-6 col-md-6 footer-text">
-                        <span data-i18n="app.copywrite"></span> <a href="/privacy_policy" data-i18n="app.privacy_policy"></a>
+                        <span data-i18n="app.copywrite"></span> 
+                        <a href="/privacy_policy" data-i18n="app.privacy_policy"></a>
                     </div>
-                    <div class="text-right col-sm-6 col-md-6 footer-text"> <span data-i18n="app.powered_by"></span> <a href="//mallmaverick.com/" target="_blank">Mall Maverick</a> </div>
+                    <div class="text-right col-sm-6 col-md-6 footer-text"> 
+                        <span data-i18n="app.powered_by"></span> 
+                        <a href="//mallmaverick.com/" target="_blank">Mall Maverick</a> 
+                    </div>
                 </div>
-           </div>
-      </section>
- </footer>
+            </div>
+        </section>
+    </footer>
 </div>
 
 <script id="logo_template" type="x-tmpl-mustache/text">
