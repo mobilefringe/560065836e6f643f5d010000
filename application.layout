@@ -235,42 +235,42 @@
                         </li>
                     </ul>
                 </div>
-
                 <div class="collapse navbar-collapse">              
                     <ul class="nav pull-right navbar-nav">
-                        
-                         <li><a href="/stores" data-i18n="nav.store_directory"></a></li>
-                         <li id="promotion_link"><a href="/promotions" data-i18n="nav.promotions"></a></li>
-                         <li id="leasing_link" class="dropdown">
+                        <li><a href="/stores" data-i18n="nav.store_directory"></a></li>
+                        <li id="promotion_link"><a href="/promotions" data-i18n="nav.promotions"></a></li>
+                        <li id="leasing_link" class="dropdown">
                             <a data-toggle="dropdown" class="dropdown-toggle"><span data-i18n="nav.leasing"></span> <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="/leasing" data-i18n="nav.leasing"></a></li>
                                 <li><a href="/photos" data-i18n="nav.photos"></a></li>
                             </ul> 
-                           
-                         </li>
-                          <li id="findus_link"><a href="/find_us" data-i18n="nav.find_us"></a></li>
-                         <li id="contact_link" class="dropdown">
+                        </li>
+                        <li id="findus_link"><a href="/find_us" data-i18n="nav.find_us"></a></li>
+                        <li id="contact_link" class="dropdown">
                             <a data-toggle="dropdown" class="dropdown-toggle"><span data-i18n="nav.contact_us"></span> <span class="caret"></span></a>
-                             <ul class="dropdown-menu">
+                            <ul class="dropdown-menu">
                                 <li><a href="/contact_us" data-i18n="nav.contact_us"></a></li>
                                 <li><a href="/about_us" data-i18n="nav.about_us"></a></li>
                                 <li><a href="/jobs" data-i18n="nav.jobs"></a></li>
-                                
                             </ul> 
-                         </li>
+                        </li>
                     </ul>
                </div>
           </div>
           <!--<div id="social_media_wrapper"> <a href="https://www.facebook.com/10DundasEast" target="_blank"><i class="fa fa-facebook"></i><p style="display:none">facebook</p></a> <a href="https://twitter.com/10DundasEast" target="_blank"><i class="fa fa-twitter"></i><p style="display:none">twitter</p></a><a href="//instagram.com/10dundaseast" target="_blank"><i class="fa fa-instagram"></i><p style="display:none">instagram</p></a><a href="https://www.youtube.com/user/10DundasEast" target="_blank"><i class="fa fa-youtube"></i><p style="display:none">youtube</p></a></div>-->
-          <div class="hidden-xs language"><a href="#" class="en-CA">en</a> | <a href="#" class="fr-CA">fr</a></div>
-          <a href="//bentallkennedy.com/" target="_blank">
+        <div class="hidden-xs language"><a href="#" class="en-CA">en</a> | <a href="#" class="fr-CA">fr</a></div>
+        <a href="//bentallkennedy.com/" target="_blank">
             <img class="property_logo primary-locale" alt="logo" src="//codecloud.cdn.speedyrails.net/sites/57f64dae6e6f641335040000/image/png/undefined/bental-logo2.png"/>
             <img class="property_logo secondary-locale" alt="logo" src="//codecloud.cdn.speedyrails.net/sites/57f64dae6e6f641335040000/image/png/undefined/bental-logo2french.png" />
         </a>
-     </div>
+    </div>
 </header>
-<div id="back-top"><img alt="BackToTop" src="//kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/c0a5afb0d05049981f657ccf2e67d904/totop.jpg"/></div>
+
+<div id="back-top">
+    <img alt="BackToTop" src="//kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/c0a5afb0d05049981f657ccf2e67d904/totop.jpg"/>
+</div>
+
 <div id="page_content">{{yield}}</div>
 
 <footer>
