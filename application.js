@@ -68,18 +68,33 @@ function toggle_submenu(id){
 	}
 }
 
+// function setPrimaryLanguage(){
+// 	sessionStorage.setItem('current_locale', sessionStorage.primary_locale);
+
+// 	i18n.setLng(sessionStorage.primary_locale, function(t) {
+// 		$(document).i18n();
+// 	});
+
+// 	$('.secondary-locale').hide(); // Shows
+// 	$('.primary-locale').show();
+// 	$("#search_input").attr("placeholder", i18n.t("general.search_placeholder"));
+// 	$("#search_input_mobile").attr("placeholder", i18n.t("general.search_placeholder"));
+// }
+
 function setPrimaryLanguage(){
-	sessionStorage.setItem('current_locale', sessionStorage.primary_locale);
-
-	i18n.setLng(sessionStorage.primary_locale, function(t) {
-		$(document).i18n();
-	});
-
-	$('.secondary-locale').hide(); // Shows
-	$('.primary-locale').show();
-	$("#search_input").attr("placeholder", i18n.t("general.search_placeholder"));
-	$("#search_input_mobile").attr("placeholder", i18n.t("general.search_placeholder"));
+    i18n.setLng(Cookies.get('primary_locale'), function(t) {
+        $(document).i18n();
+    });
+    Cookies.set('current_locale', Cookies.get('primary_locale'))
+    
+    $('.primary-locale').show(); // Shows
+    $('.secondary-locale').hide();
+    $("#search_input").attr("placeholder", i18n.t("general.search_placeholder"));
+    $("#search_input_mobile").attr("placeholder", i18n.t("general.search_placeholder"));
 }
+
+
+
 
 function refreshCurrentLanguage() {
 	i18n.setLng(sessionStorage.current_locale, function(t) {
@@ -90,20 +105,32 @@ function refreshCurrentLanguage() {
 	$('.secondary-locale').toggle(sessionStorage.secondary_locale == sessionStorage.current_locale);
 }
 
+// function setSecondaryLanguage(){
+// 	sessionStorage.setItem('current_locale', sessionStorage.secondary_locale);
+// 	i18n.setLng(sessionStorage.secondary_locale, function(t) {
+// 		$(document).i18n();
+// 	});
+// 	$('.secondary-locale').show(); // Shows
+// 	$('.primary-locale').hide();
+// 	$("#search_input").attr("placeholder", i18n.t("general.search_placeholder"));
+// 	$("#search_input_mobile").attr("placeholder", i18n.t("general.search_placeholder"));
+// }
+
 function setSecondaryLanguage(){
-	sessionStorage.setItem('current_locale', sessionStorage.secondary_locale);
-
-	i18n.setLng(sessionStorage.secondary_locale, function(t) {
-		$(document).i18n();
-	});
-
-	$('.secondary-locale').show(); // Shows
-	$('.primary-locale').hide();
-
-	$("#search_input").attr("placeholder", i18n.t("general.search_placeholder"));
-	$("#search_input_mobile").attr("placeholder", i18n.t("general.search_placeholder"));
-	
+    i18n.setLng(Cookies.get('secondary_locale'), function(t) {
+        $(document).i18n();
+    });
+    Cookies.set('current_locale', Cookies.get('secondary_locale'))
+    
+    $('.secondary-locale').show(); //Shows
+    $('.primary-locale').hide();
+    $("#search_input").attr("placeholder", i18n.t("general.search_placeholder"));
+    $("#search_input_mobile").attr("placeholder", i18n.t("general.search_placeholder"));
 }
+
+
+
+
 
 function showSearchResults(){
 	$('#search_results').show();
