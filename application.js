@@ -274,12 +274,6 @@ $(document).ready(function() {
 		showSearchResults();
 	});
     
-    // If there is no language set it to the primary locale.
-    // log(Cookies.get('current_locale'))
-    if (!Cookies.get('current_locale')) {
-        setPrimaryLanguage();
-    }
-    
 	//Using i18n for localization, for more info please visit http://i18next.com/
     i18n.init({preload: [getStorage().primary_locale, getStorage().secondary_locale], resGetPath: '../__lng__.json', fallbackLng: false }, function(t) {
         var current_locale = "";
@@ -296,6 +290,12 @@ $(document).ready(function() {
 			$('.en-CA').removeClass('langSelect');
         }
     });
+    
+    // If there is no language set it to the primary locale.
+    // log(Cookies.get('current_locale'))
+    if (!Cookies.get('current_locale')) {
+        setPrimaryLanguage();
+    }
     
 	$('.close-search').click(function(){
 		$('#search_results').hide();
