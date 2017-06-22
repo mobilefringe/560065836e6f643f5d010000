@@ -17,9 +17,6 @@ if(getRequestParam('locale') == 'fr'){
 } else if(getRequestParam('locale') == 'en'){
     setCurrentLocale(Cookies.get('secondary_locale'));
 }
-        
-// sessionStorage.setItem('primary_locale', 'en-CA');
-// sessionStorage.setItem('secondary_locale', 'fr-CA');
 
 function isSameLocale(current_locale, locale_2) {
 	locale = null;
