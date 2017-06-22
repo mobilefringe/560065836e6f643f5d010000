@@ -48,8 +48,6 @@ $(document).ready(function() {
             }
         }
         
-        Cookies.get('secondary_locale') == Cookies.get('current_locale')
-        
         $('#loading_screen').hide();
         $('#main_content').fadeIn();
         // store_details.map_x_coordinate = store_details.x_coordinate - 19;
