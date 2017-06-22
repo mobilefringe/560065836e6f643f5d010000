@@ -12,9 +12,9 @@ setEndPoint('//galeries.mallmaverick.com/api/v3/galeries/all.json');
 Cookies.set('primary_locale', 'en-CA');
 Cookies.set('secondary_locale', 'fr-CA');
 
-if(getRequestParam('locale') == 'fr'){
+if(getRequestParam('locale') == 'en'){
     setCurrentLocale(Cookies.get('primary_locale'));
-} else if(getRequestParam('locale') == 'en'){
+} else if(getRequestParam('locale') == 'fr'){
     setCurrentLocale(Cookies.get('secondary_locale'));
 }
 
