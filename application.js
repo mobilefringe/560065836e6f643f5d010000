@@ -86,7 +86,6 @@ function setPrimaryLanguage(){
         $(document).i18n();
     });
     Cookies.set('current_locale', Cookies.get('primary_locale'))
-    
     $('.primary-locale').show(); // Shows
     $('.secondary-locale').hide();
     $("#search_input").attr("placeholder", i18n.t("general.search_placeholder"));
@@ -121,7 +120,6 @@ function setSecondaryLanguage(){
         $(document).i18n();
     });
     Cookies.set('current_locale', Cookies.get('secondary_locale'))
-    
     $('.secondary-locale').show(); //Shows
     $('.primary-locale').hide();
     $("#search_input").attr("placeholder", i18n.t("general.search_placeholder"));
