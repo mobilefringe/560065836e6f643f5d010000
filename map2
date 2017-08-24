@@ -64,7 +64,7 @@
 
 
 </style>
-<script src="//kodekloud.s3.amazonaws.com/sites/54d4e9206e6f64691f000000/d9e054e28dd1bad70a952dd85777e93f/jquery.smoothZoom.min.js"></script>
+<script src="//codecloud.cdn.speedyrails.net/sites/59035a6c6e6f645a5b420000/application/x-javascript/1503602727000/smoothZoomA24.js"></script>
 <div id="pop-over">
     <span class="pull-left">
         <p id="pop-over-map-name">Default Name</p>
