@@ -126,15 +126,20 @@
                         val.store_detail_btn = store_details.slug; 
                         val.store_name = store_details.name;
                     }
-                    if((val.promo_image_url_abs).indexOf('missing.png') > -1 || (val.promo_image2_url_abs).indexOf('missing.png') > -1){
+                    if((val.promo_image_url_abs).indexOf('missing.png') > -1){
                         var store_front = getImageURL(store_details.store_front_url);
                         val.alt_promo_image_url = store_front;
                         if(store_front == null) {
                             val.alt_promo_image_url = "//codecloud.cdn.speedyrails.net/sites/560065836e6f643f5d010000/bbd3b2e11fada4dc74c91780c173e4cf/default.jpg"
+                        }
+                    }
+                    if((val.promo_image2_url_abs).indexOf('missing.png') > -1){
+                        var store_front = getImageURL(store_details.store_front_url);
+                        val.alt_promo_image_url_2 = store_front;
+                        if(store_front == null) {
                             val.alt_promo_image_url_2 = "//codecloud.cdn.speedyrails.net/sites/560065836e6f643f5d010000/bbd3b2e11fada4dc74c91780c173e4cf/default.jpg"
                         }
                     }
-    
                     // } else {
                     //     val.alt_promo_image_url = "//codecloud.cdn.speedyrails.net/sites/560065836e6f643f5d010000/bbd3b2e11fada4dc74c91780c173e4cf/default.jpg"
                     //     val.alt_promo_image_url_2 = "//codecloud.cdn.speedyrails.net/sites/560065836e6f643f5d010000/bbd3b2e11fada4dc74c91780c173e4cf/default.jpg"
