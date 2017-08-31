@@ -135,7 +135,7 @@ $(document).ready(function() {
                 item_rendered.push(rendered);
             });
         } else if(type == "hours"){
-            hours = getHoursForStoreSlug(val.slug).sortBy(function(o){ return o.day_of_week });
+            hours = getHoursForStoreSlug(collection.slug).sortBy(function(o){ return o.day_of_week });
             $.each( hours , function( key, val ) {
                 switch(val.day_of_week) {
                     case 0:
