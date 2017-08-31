@@ -46,7 +46,7 @@ $(document).ready(function() {
         Mustache.parse(template_html);   // optional, speeds up future uses
         item_list.push(collection);
         $.each( item_list , function( key, val ) {
-            if ((val.promo_image_url).indexOf('missing.png') > -1){
+            if ((val.promo_image_url_abs).indexOf('missing.png') > -1){
                 if (val.promotionable_type == "Store") {
                     var store_details = getStoreDetailsByID(val.promotionable_id);
                     val.alt_promo_image_url = getImageURL(store_details.store_front_url);
