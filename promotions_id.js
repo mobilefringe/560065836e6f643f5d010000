@@ -49,7 +49,8 @@ $(document).ready(function() {
             if ((val.promo_image_url).indexOf('missing.png') > -1){
                 if (val.promotionable_type == "Store") {
                     var store_details = getStoreDetailsByID(val.promotionable_id);
-                    val.alt_promo_image_url = getImageURL(store_details.store_front_url);
+                    // val.alt_promo_image_url = getImageURL(store_details.store_front_url);
+                    val.alt_promo_image_url = promo_image_url_abs;
                     val.store_detail_btn = store_details.slug 
                     val.store_name = store_details.name
                 } else {
