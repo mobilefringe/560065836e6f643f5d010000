@@ -53,9 +53,9 @@ $(document).ready(function() {
                     val.alt_promo_image_url = val.promo_image_url_abs;
                     val.store_detail_btn = store_details.slug 
                     val.store_name = store_details.name
-                } else {
-                    val.alt_promo_image_url = "//codecloud.cdn.speedyrails.net/sites/560065836e6f643f5d010000/bbd3b2e11fada4dc74c91780c173e4cf/default.jpg"
-                    val.alt_promo_image_url_2 = "//codecloud.cdn.speedyrails.net/sites/560065836e6f643f5d010000/bbd3b2e11fada4dc74c91780c173e4cf/default.jpg"
+                // } else {
+                //     val.alt_promo_image_url = "//codecloud.cdn.speedyrails.net/sites/560065836e6f643f5d010000/bbd3b2e11fada4dc74c91780c173e4cf/default.jpg"
+                //     val.alt_promo_image_url_2 = "//codecloud.cdn.speedyrails.net/sites/560065836e6f643f5d010000/bbd3b2e11fada4dc74c91780c173e4cf/default.jpg"
                 }
             // } else {
             //     if (val.promotionable_type == "Store") {
