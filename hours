@@ -73,10 +73,11 @@
     $(document).ready(function() {
         function renderAll (){
             var propertyDetails = getPropertyDetails();
-            var hours = getPropertyHours();
-            renderPageData('#centre_info_container','#centre_info_template',propertyDetails, 'property_details')
-            renderPageData('#reg_hours_container','#reg_hours_template',hours, 'reg_hours')
-            renderPageData('#holiday_hours_container','#holiday_hours_template',hours, 'holiday_hours')
+            renderPageData('#centre_info_container','#centre_info_template',propertyDetails, 'property_details');
+            var hours = getPropertyRegularHours();
+            renderPageData('#reg_hours_container','#reg_hours_template', hours, 'reg_hours');
+            var holiday_hours = getPropertyHolidayHours().sortBy(function(o){ return o.holiday_date});
+            renderPageData('#holiday_hours_container','#holiday_hours_template', holiday_hours, 'holiday_hours')
             $("#loading_screen").hide();
             $("#main_content").show();
         }
