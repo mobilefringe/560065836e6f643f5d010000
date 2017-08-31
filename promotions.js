@@ -15,7 +15,6 @@ $(document).ready(function() {
             } 
         });
         all_promos = promo_array;
-        console.log(all_promos)
         if (all_promos.length > 0 ) {
             renderPageData("#promo_list_container","#promo_list_template", all_promos, "promos");    
         } else {
