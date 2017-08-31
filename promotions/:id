@@ -126,7 +126,7 @@
                         val.store_detail_btn = store_details.slug; 
                         val.store_name = store_details.name;
                     }
-                    if((val.promo_image_url_abs).indexOf('missing.png') > -1 || val.promo_image2_url_abs).indexOf('missing.png') > -1){
+                    if((val.promo_image_url_abs).indexOf('missing.png') > -1 || (val.promo_image2_url_abs).indexOf('missing.png') > -1){
                         var store_front = getImageURL(store_details.store_front_url);
                         val.alt_promo_image_url = store_front;
                         if(store_front == null) {
