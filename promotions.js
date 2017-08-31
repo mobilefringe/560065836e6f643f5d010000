@@ -48,6 +48,7 @@ $(document).ready(function() {
                             val.alt_promo_image_url_2 = "//assets.kodekloud.io/sites/562e8c436e6f642deb010000/image/jpeg/1443809778000/default.jpg";
                         } else {
                             val.alt_promo_image_url = (store_details.store_front_url_abs);
+                            val.alt_promo_image_url_2 = (store_details.store_front_url_abs);
                         }
                         val.store_name = store_details.name
                     } else {
