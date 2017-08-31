@@ -76,7 +76,6 @@
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
             promo_details = getPromotionDetailsBySlug(slug);
-            console.log(promo_details)
             renderPageData('#breadcrumb_container','#breadcrumb_template',promo_details, 'promo_details')
             renderPageData('#banner_container','#banner_template',promo_details, 'promo_details')
             render_page_details("#promo_container", "#promo_template", promo_details)
@@ -120,7 +119,6 @@
                 if ((val.promo_image_url).indexOf('missing.png') > -1){
                     if (val.promotionable_type == "Store") {
                         var store_details = getStoreDetailsByID(val.promotionable_id);
-                        // val.alt_promo_image_url = getImageURL(store_details.store_front_url);
                         val.alt_promo_image_url = val.promo_image_url_abs;
                         val.alt_promo_image_url_2 = val.promo_image2_url_abs;
                         val.store_detail_btn = store_details.slug; 
@@ -140,10 +138,6 @@
                             val.alt_promo_image_url_2 = "//codecloud.cdn.speedyrails.net/sites/560065836e6f643f5d010000/bbd3b2e11fada4dc74c91780c173e4cf/default.jpg"
                         }
                     }
-                    // } else {
-                    //     val.alt_promo_image_url = "//codecloud.cdn.speedyrails.net/sites/560065836e6f643f5d010000/bbd3b2e11fada4dc74c91780c173e4cf/default.jpg"
-                    //     val.alt_promo_image_url_2 = "//codecloud.cdn.speedyrails.net/sites/560065836e6f643f5d010000/bbd3b2e11fada4dc74c91780c173e4cf/default.jpg"
-                    // }
                 } else {
                     if (val.promotionable_type == "Store") {
                         var store_details = getStoreDetailsByID(val.promotionable_id);
@@ -151,16 +145,9 @@
                         val.store_name = store_details.name
                     }
                      
-val.alt_promo_image_url = getCloudinaryImageUrl(val.promo_image_url);
-                    
-val.alt_promo_image_url_2 = getCloudinaryImageUrl(val.promo_image2_url);
+                    val.alt_promo_image_url = getCloudinaryImageUrl(val.promo_image_url);
+                    val.alt_promo_image_url_2 = getCloudinaryImageUrl(val.promo_image2_url);
                 }
-                // start = new Date (val.start_date);
-                // end = new Date (val.end_date);
-                // start.setDate(start.getDate()+1);
-                // end.setDate(end.getDate()+1);
-                // val.dates = (get_month(start.getMonth()))+" "+(start.getDate())+" - "+get_month(end.getMonth())+" "+end.getDate();
-                
                 var start = moment(val.start_date).tz(getPropertyTimeZone());
                 var end = moment(val.end_date).tz(getPropertyTimeZone());
                 val.dates = start.format("MMM D") + " - " + end.format("MMM D");
@@ -176,54 +163,6 @@ val.alt_promo_image_url_2 = getCloudinaryImageUrl(val.promo_image2_url);
             }
         }
         
-        function get_month (id){
-            switch(id) {
-                case 0:
-                    month = "Jan"
-                    break;
-                case 1:
-                    month = "Feb"
-                    break;
-                case 2:
-                    month = "Mar"
-                    break;
-                case 3:
-                    month = "Apr"
-                    break;
-                case 4:
-                    month = "May"
-                    break;
-                case 5:
-                    month = "June"
-                    break;
-                case 6:
-                    month = "July"
-                    break;
-                case 7:
-                    month = "Aug"
-                    break;
-                case 8:
-                    month = "Sep"
-                    break;
-                case 9:
-                    month = "Oct"
-                    break;
-                case 10:
-                    month = "Nov"
-                    break;
-                case 11:
-                    month = "Dec"
-                    break;
-                    
-            }
-            return month;
-        }
-        
-
         loadMallData(renderAll);  
-
-    
-  
     });
-    
 </script>
