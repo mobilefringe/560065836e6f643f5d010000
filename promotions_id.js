@@ -49,22 +49,21 @@ $(document).ready(function() {
             if ((val.promo_image_url).indexOf('missing.png') > -1){
                 if (val.promotionable_type == "Store") {
                     var store_details = getStoreDetailsByID(val.promotionable_id);
-                    // val.alt_promo_image_url = getImageURL(store_details.store_front_url);
-                    val.alt_promo_image_url = val.promo_image_url_abs;
+                    val.alt_promo_image_url = getImageURL(store_details.store_front_url);
                     val.store_detail_btn = store_details.slug 
                     val.store_name = store_details.name
-                // } else {
-                //     val.alt_promo_image_url = "//codecloud.cdn.speedyrails.net/sites/560065836e6f643f5d010000/bbd3b2e11fada4dc74c91780c173e4cf/default.jpg"
-                //     val.alt_promo_image_url_2 = "//codecloud.cdn.speedyrails.net/sites/560065836e6f643f5d010000/bbd3b2e11fada4dc74c91780c173e4cf/default.jpg"
+                } else {
+                    val.alt_promo_image_url = "//codecloud.cdn.speedyrails.net/sites/560065836e6f643f5d010000/bbd3b2e11fada4dc74c91780c173e4cf/default.jpg"
+                    val.alt_promo_image_url_2 = "//codecloud.cdn.speedyrails.net/sites/560065836e6f643f5d010000/bbd3b2e11fada4dc74c91780c173e4cf/default.jpg"
                 }
-            // } else {
-            //     if (val.promotionable_type == "Store") {
-            //         var store_details = getStoreDetailsByID(val.promotionable_id);
-            //         val.store_detail_btn = store_details.slug 
-            //         val.store_name = store_details.name
-            //     }
-            //     val.alt_promo_image_url = getImageURL(val.promo_image_url);
-            //     val.alt_promo_image_url_2 = getImageURL(val.promo_image2_url);
+            } else {
+                if (val.promotionable_type == "Store") {
+                    var store_details = getStoreDetailsByID(val.promotionable_id);
+                    val.store_detail_btn = store_details.slug 
+                    val.store_name = store_details.name
+                }
+                val.alt_promo_image_url = getImageURL(val.promo_image_url);
+                val.alt_promo_image_url_2 = getImageURL(val.promo_image2_url);
             }
             var start = moment(val.start_date).tz(getPropertyTimeZone());
             var end = moment(val.end_date).tz(getPropertyTimeZone());
