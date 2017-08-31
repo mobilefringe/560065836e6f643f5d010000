@@ -179,15 +179,25 @@ $(document).ready(function() {
                     
                     if (val.description.length > 110) {
                        val.description =  val.description.substring(0,100)+'...';
-                    } 
+                    }
                     if ((val.promo_image_url).indexOf('missing.png') > -1){
                         var pathArray = window.location.pathname.split( '/' );
                         var slug = pathArray[pathArray.length-1];
                         var store_details = getStoreDetailsBySlug(slug);
-                        val.alt_promo_image_url = getImageURL(store_details.store_front_url);
-                    } else {
-                        val.alt_promo_image_url = getImageURL(val.promo_image_url);
-                    }
+                        val.alt_promo_image_url = val.promo_image_url_abs;
+                    } 
+                    if ((val.promo_image_url_abs).indexOf('missing.png') > -1){
+                        val.alt_promo_image_url = store_details.store_front_url_abs;
+                    }   
+                        
+                    // if ((val.promo_image_url).indexOf('missing.png') > -1){
+                    //     var pathArray = window.location.pathname.split( '/' );
+                    //     var slug = pathArray[pathArray.length-1];
+                    //     var store_details = getStoreDetailsBySlug(slug);
+                    //     val.alt_promo_image_url = getImageURL(store_details.store_front_url);
+                    // } else {
+                    //     val.alt_promo_image_url = getImageURL(val.promo_image_url);
+                    // }
                     $("#promo_header").show();   
                     $("#mobile_promo_header").show();  
                 }
