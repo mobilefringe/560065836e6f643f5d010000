@@ -50,7 +50,7 @@ $(document).ready(function() {
                 if (val.promotionable_type == "Store") {
                     var store_details = getStoreDetailsByID(val.promotionable_id);
                     val.alt_promo_image_url = val.promo_image_url_abs;
-                    val.alt_promo_image_url_2 = val.promo_image_url_abs_2;
+                    val.alt_promo_image_url_2 = val.promo_image2_url_abs;
                     val.store_detail_btn = store_details.slug 
                     val.store_name = store_details.name
                 }
