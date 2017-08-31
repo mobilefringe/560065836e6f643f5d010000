@@ -40,7 +40,7 @@ $(document).ready(function() {
         
         $.each( collection , function( key, val ) {
             if (type == "promos"){
-                if ((val.promo_image_url_abs).indexOf('missing.png') > -1 || (val.promo_image2_url_abs).indexOf('missing.png') > -1){
+                if ((val.promo_image_url_abs).indexOf('missing.png') > -1){
                     if (val.promotionable_type == "Store") {
                         var store_details = getStoreDetailsByID(val.promotionable_id);
                         if ((store_details.store_front_url_abs).indexOf('missing.png') > -1) {
@@ -48,7 +48,6 @@ $(document).ready(function() {
                             val.alt_promo_image_url_2 = "//assets.kodekloud.io/sites/562e8c436e6f642deb010000/image/jpeg/1443809778000/default.jpg";
                         } else {
                             val.alt_promo_image_url = (store_details.store_front_url_abs);
-                            val.alt_promo_image_url_2 = (store_details.store_front_url_abs);
                         }
                         val.store_name = store_details.name
                     } else {
