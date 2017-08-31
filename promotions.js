@@ -74,8 +74,7 @@ $(document).ready(function() {
                 var end = moment(val.end_date).tz(getPropertyTimeZone());
                 if (start.format("DMY") == end.format("DMY")){
                 	val.dates = start.format("MMM D");
-                }
-                else{
+                } else {
                 	val.dates = start.format("MMM D") + " - " + end.format("MMM D");
                 }
             }
@@ -86,50 +85,6 @@ $(document).ready(function() {
         $(container).html(item_rendered.join(''));
     };
     
-    
-    function get_month (id){
-        switch(id) {
-            case 0:
-                month = "Jan"
-                break;
-            case 1:
-                month = "Feb"
-                break;
-            case 2:
-                month = "Mar"
-                break;
-            case 3:
-                month = "Apr"
-                break;
-            case 4:
-                month = "May"
-                break;
-            case 5:
-                month = "June"
-                break;
-            case 6:
-                month = "July"
-                break;
-            case 7:
-                month = "Aug"
-                break;
-            case 8:
-                month = "Sep"
-                break;
-            case 9:
-                month = "Oct"
-                break;
-            case 10:
-                month = "Nov"
-                break;
-            case 11:
-                month = "Dec"
-                break;
-                
-        }
-        return month;
-    }
-
     rpd.add(renderAll); 
     $(document).trigger('render:ready');
 });
