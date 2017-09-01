@@ -223,7 +223,8 @@ $(document).ready(function() {
 		var propertyDetails = getPropertyDetails();
 		renderPropertyLogo('#logo_template','#site_logo',propertyDetails);
 		renderPropertyFooter('#footer_template','#footer_container',propertyDetails);
-		renderTodaysHours('#todays_hours_search_template','#todays-hours-search');
+		var hours = getTodaysHours();
+        renderHomeHours('#todays-hours-search','#todays_hours_search_template', hours);
 	});
 	
 	$('.primary-locale, .secondary-locale').hide();
