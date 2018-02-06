@@ -59,6 +59,28 @@
 
     <style>
         /*custom styles*/
+          .bk_logo_svg {
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: inline-block;
+            width: 150px;
+            height: 60px;
+            background-image: url(https://www.mallmaverick.com/system/site_images/photos/000/036/590/original/BK_Logo_ProudlyManagedBy_White_final-01.svg?1517934408);
+            background-size: 100px 70px;
+            background-repeat: no-repeat;
+        }
+         .bk_logo_svg2 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: inline-block;
+            width: 150px;
+            height: 60px;
+            background-image: url(https://www.mallmaverick.com/system/site_images/photos/000/036/598/original/BK_Logo_ProudlyManagedBy_White_final_FR_2-01-01.svg?1517945952);
+            background-size: 100px 70px;
+            background-repeat: no-repeat;
+        }
         a .directory_content:hover{
             color: #999 !important;
         }
@@ -169,6 +191,12 @@
                 border:15px solid #eaf1fb !important;
                 border-top:none !important;
             }  
+             .bk_logo_svg {
+                display: none;
+            }
+            .bk_logo_svg2 {
+                display: none;
+            }
         }
     </style>
 </head>
@@ -238,8 +266,9 @@
           <!--<div id="social_media_wrapper"> <a href="https://www.facebook.com/10DundasEast" target="_blank"><i class="fa fa-facebook"></i><p style="display:none">facebook</p></a> <a href="https://twitter.com/10DundasEast" target="_blank"><i class="fa fa-twitter"></i><p style="display:none">twitter</p></a><a href="//instagram.com/10dundaseast" target="_blank"><i class="fa fa-instagram"></i><p style="display:none">instagram</p></a><a href="https://www.youtube.com/user/10DundasEast" target="_blank"><i class="fa fa-youtube"></i><p style="display:none">youtube</p></a></div>-->
         <div class="hidden-xs language"><a href="#" class="en-CA">en</a> | <a href="#" class="fr-CA">fr</a></div>
         <a href="//bentallkennedy.com/" target="_blank">
-            <img class="property_logo primary-locale" alt="logo" src="//codecloud.cdn.speedyrails.net/sites/57f64dae6e6f641335040000/image/png/undefined/bental-logo2.png"/>
-            <img class="property_logo secondary-locale" alt="logo" src="//codecloud.cdn.speedyrails.net/sites/57f64dae6e6f641335040000/image/png/undefined/bental-logo2french.png" />
+            <div class="bk_logo_svg primary-locale"></div>
+           
+            <div class="bk_logo_svg2 secondary-locale"></div>
         </a>
     </div>
 </header>
