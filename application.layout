@@ -236,8 +236,8 @@
 <div class="main_window">
 <header>
     <a class="accessible" href="#page_content">[Skip to Content]</a>
-     <div class="container">
-          <div class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <nav class="navbar navbar-default" role="navigation">
                <div class="navbar-header">
                <div id="site_logo"></div>
 
@@ -294,7 +294,7 @@
                         </li>
                     </ul>
                </div>
-          </div>
+            </nav>
           <!--<div id="social_media_wrapper"> <a href="https://www.facebook.com/10DundasEast" target="_blank"><i class="fa fa-facebook"></i><p style="display:none">facebook</p></a> <a href="https://twitter.com/10DundasEast" target="_blank"><i class="fa fa-twitter"></i><p style="display:none">twitter</p></a><a href="//instagram.com/10dundaseast" target="_blank"><i class="fa fa-instagram"></i><p style="display:none">instagram</p></a><a href="https://www.youtube.com/user/10DundasEast" target="_blank"><i class="fa fa-youtube"></i><p style="display:none">youtube</p></a></div>-->
         <div class="hidden-xs language"><a href="#" class="en-CA">en</a> | <a href="#" class="fr-CA">fr</a></div>
         <a href="//bentallkennedy.com/" target="_blank">
