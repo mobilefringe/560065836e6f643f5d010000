@@ -30,11 +30,11 @@
 
 <script id="description_template" type="x-tmpl-mustache/text">
     </br>
-  {{#welcome_message}} <h3 class="site_welcome_msg primary-locale">{{welcome_message}}</h3>{{/welcome_message}}
-   {{#welcome_message_2}}<h3 class="site_welcome_msg secondary-locale">{{welcome_message_2}}</h3>{{/welcome_message_2}}
+  {{#welcome_message}} <h2 class="site_welcome_msg primary-locale">{{welcome_message}}</h2>{{/welcome_message}}
+   {{#welcome_message_2}}<h2 class="site_welcome_msg secondary-locale">{{welcome_message_2}}</h2>{{/welcome_message_2}}
 
-   {{#description}}<h4 class="site_description primary-locale">{{description}}</h4>{{/description}}
-   {{#description_2}}<h4 class="site_description secondary-locale">{{description_2}}</h4>{{/description_2}}
+   {{#description}}<h3 class="site_description primary-locale">{{description}}</h3>{{/description}}
+   {{#description_2}}<h3 class="site_description secondary-locale">{{description_2}}</h3>{{/description_2}}
 </script>
 
 <!--the welcome box colour : #98add0 (outside)   #d2d9e9 (inside)-->
