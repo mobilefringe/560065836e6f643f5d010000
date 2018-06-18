@@ -50,7 +50,7 @@
                     <div class="feature_div">
                         <div class="portfolio_description">
                             <h3 class="feature_title">
-                                <a style="color:black;font-size:20px" href="{{url}}">{{name_locale}}</a>
+                                {{name_locale}}
                             </h3>
                             
                         </div>
