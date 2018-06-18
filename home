@@ -17,7 +17,7 @@
     <script id="banner_template" type="x-tmpl-mustache/text">
          
         <li class="item">
-            <a href="{{url}}" {{css}} onclick="{{noLink}}">
+            {{#url}}<a href="{{url}}" {{css}} onclick="{{noLink}}">{{/url}}
                 <img src="{{image_url}}" alt="{{name}} "/>
             </a>
         </li>
