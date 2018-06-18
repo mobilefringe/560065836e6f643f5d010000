@@ -308,7 +308,7 @@
 <div id="back-top">
     <img alt="BackToTop" src="//kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/c0a5afb0d05049981f657ccf2e67d904/totop.jpg"/>
 </div>
-
+<h1 style="display: none">Galeries Le Gardeur</h1>
 <div id="page_content">{{yield}}</div>
 
 <footer>
