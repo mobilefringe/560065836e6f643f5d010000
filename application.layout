@@ -298,9 +298,9 @@
           <!--<div id="social_media_wrapper"> <a href="https://www.facebook.com/10DundasEast" target="_blank"><i class="fa fa-facebook"></i><p style="display:none">facebook</p></a> <a href="https://twitter.com/10DundasEast" target="_blank"><i class="fa fa-twitter"></i><p style="display:none">twitter</p></a><a href="//instagram.com/10dundaseast" target="_blank"><i class="fa fa-instagram"></i><p style="display:none">instagram</p></a><a href="https://www.youtube.com/user/10DundasEast" target="_blank"><i class="fa fa-youtube"></i><p style="display:none">youtube</p></a></div>-->
         <div class="hidden-xs language"><a href="#" class="en-CA">en</a> | <a href="#" class="fr-CA">fr</a></div>
         <a href="//bentallkennedy.com/" target="_blank">
-            <div class="bk_logo_svg primary-locale"></div>
+            <div class="bk_logo_svg primary-locale"><p style="display:none">Bentall Kennedy</p></div>
            
-            <div class="bk_logo_svg2 secondary-locale"></div>
+            <div class="bk_logo_svg2 secondary-locale"><p style="display:none">Bentall Kennedy</p></div>
         </a>
     </div>
 </header>
