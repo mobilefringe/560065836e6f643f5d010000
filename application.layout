@@ -82,16 +82,16 @@
             background-repeat: no-repeat;
         }
         a .directory_content:hover{
-            color: #999 !important;
+            color: #666 !important;
         }
         /*hyperlinks*/
         a {
-            color:#999999;
+            color:#666;
             text-decoration:inherit;
         }
         /*hyperlink hover color*/
         a:hover{
-            color:#999999 !important;
+            color:#666 !important;
         }
         body{
             background:white;
@@ -186,7 +186,7 @@
             color: #18498d ;
         }
         .navbar .nav li a:hover {
-            color:#999999 !important;
+            color:#666 !important;
         }
         .site-map-section a:hover {
         }
