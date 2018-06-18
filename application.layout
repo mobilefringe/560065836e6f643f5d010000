@@ -315,24 +315,6 @@
     <section id="footer_teasers_wrapper">
         <div class="container">
             <div class="footer_div">
-                <!--<div class="footer_teaser" style="margin-right:195px">-->
-                <!--    <h3 class="footer_text" style="font-size:17px;width:300px">Sign up and save</h3>-->
-                <!--    <p class="footer_text" style="width:300px;font-size:17px">-->
-                <!--        Join our list and stay connected to be the first to hear about special sales & exclusive events!-->
-                <!--    </p>-->
-                <!--    <form action="//mobilefringe.createsend.com/t/d/s/ijjitl/" method="post" id="subForm">-->
-                <!--        <label for="fieldEmail" style="display:none"> subscribe email </label>-->
-                <!--        <input style="width:290px" class="search_input" id="fieldEmail" name="cm-ijjitl-ijjitl" type="email" required placeholder="enter email" /> -->
-                <!--        <div class="checkbox footer_text" style="width:300px">-->
-                <!--            <span>-->
-                <!--                <label for="agree_terms" style="display:none">Agree Terms</label>-->
-                <!--                <input type="checkbox" class="info_check" id="agree_terms" style="margin-left:-15px; width:15px" required/>&nbsp;I agree to receive emails from Alpine Centre-->
-                <!--            </span>-->
-                <!--        </div>-->
-                <!--        <button class="btn btn-default feature-item-button"  data-i18n="general.submit">Submit</button>-->
-                <!--        <br>-->
-                <!--    </form>-->
-                <!--</div>-->
                 <div class="footer_teaser">
                     <div id="footer_container"></div>
                     <div style="height:30px;position:relative">
