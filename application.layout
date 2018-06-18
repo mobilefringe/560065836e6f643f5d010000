@@ -277,7 +277,7 @@
                         <li><a href="/stores" data-i18n="nav.store_directory"></a></li>
                         <li id="promotion_link"><a href="/promotions" data-i18n="nav.promotions"></a></li>
                         <li id="leasing_link" class="dropdown">
-                            <a data-toggle="dropdown" class="dropdown-toggle"><span data-i18n="nav.leasing"></span> <span class="caret"></span></a>
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false"><span data-i18n="nav.leasing"></span> <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="/leasing" data-i18n="nav.leasing"></a></li>
                                 <li><a href="/photos" data-i18n="nav.photos"></a></li>
