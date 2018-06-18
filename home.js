@@ -86,6 +86,8 @@ $(document).ready(function() {
             nextText: "",
             pauseOnHover: true
         });
+        $(".flex-prev").html("<p style='display: none'>Previous Slide</p>");
+		$(".flex-next").html("<p style='display: none'>Next Slide</p>"); 
     }
     
     function renderFeatureItems(feature_template,feature_items,featureList){
