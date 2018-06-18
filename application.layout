@@ -193,6 +193,30 @@
         .primary-locale, .secondary-locale {
             display:none;
         }
+        #footer_teasers_wrapper .footer_teaser a {
+            font-size: 13px;
+            color: #ccc;
+        }
+        #footer_teasers_wrapper .footer_teaser a:hover {
+            color: #ccc !important;
+            text-decoration: underline;
+        }
+        .copyright, .copyright a {
+            color: #FFF;
+        }
+        .copyright a:hover, .copyright a:focus {
+            color: #FFF !important;
+            text-decoration: underline;
+        }
+        .copyright {
+            background-color: rgba(0, 0, 0, 1);
+        }
+        .accessible {
+            color: #fff;
+        }
+        .btn-danger {
+            background-color: #c9312c;
+        }
         @media (max-width: 767px) {
             .main_window{
                 width:100%;
