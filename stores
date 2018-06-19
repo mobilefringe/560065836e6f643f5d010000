@@ -65,9 +65,9 @@
     <a href="/stores/{{slug}}">
         <p class="directory_content directory_name_col">{{name_locale}}</p>
     </a>
-    <a href="tel:{{phone}}">
+   {{#phone}} <a href="tel:{{phone}}">
         <p class="directory_content directory_phone_col">{{phone}}</p>
-    </a>
+    </a>{{/phone}}
 </script>
 
 <script id="centre_info_template" type="x-tmpl-mustache/text">
