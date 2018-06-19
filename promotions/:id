@@ -24,8 +24,8 @@
     </nav>
     <div class="page_banner" id="banner_container">
         <script id="banner_template" type="x-tmpl-mustache/text">
-            <span class="primary-locale">{{name}}</span>
-            <span class="secondary-locale">{{name_2}}</span>
+            <h2 class="primary-locale">{{name}}</2
+            <h2 class="secondary-locale">{{name_2}}</h2>
         </script>
     </div>
     <div class="inside_page_content">
