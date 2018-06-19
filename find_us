@@ -27,8 +27,8 @@
     </div>
 </div>
 <script id="centre_info_template" type="x-tmpl-mustache/text">
-                    <p class="directory_content">{{name}}</p>
-                    <p class="directory_content">{{address1}}</p>
-                    <p class="directory_content">{{city}}, {{province_state}} {{postal_code}}</p>
-                </script>
+    <p class="directory_content">{{name}}</p>
+    <p class="directory_content">{{address1}}</p>
+    <p class="directory_content">{{city}}, {{province_state}} {{postal_code}}</p>
+</script>
 <script src="/find_us.js" defer></script>
