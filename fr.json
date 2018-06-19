@@ -51,7 +51,8 @@
 	    "contact_phone":"Téléphone: ",
 	    "contact_email":"Email: ",
 	   "store_details":"Détails en magasin",
-	   "no_jobs":"Il n’y a aucun emploi vacant pour le moment. Veuillez revenir plus tard."
+	   "no_jobs":"Il n’y a aucun emploi vacant pour le moment. Veuillez revenir plus tard.",
+	   "read_more" : "Détails du poste"
 	},
 	"promotions" : {
 		"no_promotions" : "Il n’y a aucune promotion en ce moment. Veuillez revenir plus tard.",
