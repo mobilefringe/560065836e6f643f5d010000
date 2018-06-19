@@ -33,7 +33,7 @@
             <form name="contact_form" id="contact_form" method="post">
                 <div class="row" style="margin-left:-15px;margin-right:-15px">
                     <div class="col-sm-12 col-md-12">
-                        <h5 data-i18n="contact_us.form.intro_message"></h5>
+                        <p data-i18n="contact_us.form.intro_message"></p>
                     </div>
                     <div class="col-sm-6 col-md-6">
                         <label for="name" data-i18n="contact_us.form.name"></label>
