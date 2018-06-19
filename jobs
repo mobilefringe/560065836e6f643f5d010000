@@ -20,8 +20,8 @@
             <li class="active" data-i18n="nav.jobs"></li>
         </ul>
     </nav>
-    <div class="page_banner" data-i18n="nav.jobs">
-        Jobs
+    <div class="page_banner" >
+        <h2 data-i18n="nav.jobs"></h2>
     </div>
     <div class="inside_page_content">
         <div class="left_column">
