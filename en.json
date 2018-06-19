@@ -157,7 +157,8 @@
 		"contact_phone" : "Contact Phone: ",
 		"contact_email" : "Contact Email: ",
         "closing_date" : "Closing Date: ",		
-		"store_details" : "View Store Details"
+		"store_details" : "View Store Details",
+		"read_more" : "Job Details"
     },
     
 	"general" : {
