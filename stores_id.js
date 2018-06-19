@@ -131,6 +131,9 @@ $(document).ready(function() {
                 }
  
                 val.hours = getHoursForStoreSlug(val.slug).sortBy(function(o){ return o.day_of_week });
+                if(val.hours) {
+	$("#hour_label").show();
+}
                 var rendered = Mustache.render(template_html,val);
                 item_rendered.push(rendered);
             });
