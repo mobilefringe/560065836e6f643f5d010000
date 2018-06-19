@@ -1,0 +1,47 @@
+
+<div id="loading_screen">
+    <img alt="loading" src="//kodekloud.s3.amazonaws.com/sites/5447ebb66e6f641987020000/3604f5c26997bea3de504de139debcec/loading.gif"/>
+</div>
+
+<div  id="main_content" style="display:none">
+    <nav>
+        <ul class="breadcrumb">
+        <li><a href="/home" data-i18n="nav.home"></a> </li>
+        <li class="active" id="active_breadcrumb"></li>
+    </ul>
+    </nav>
+    <div class="page_banner" id="page_title">
+    
+    </div>
+    <div class="inside_page_content" >
+        <div class="left_column" id="mm_page_content">
+            
+        </div>
+        
+        <div class="left_column" id="404_msg" style="display:none">
+            <section class="call_to_action">
+               <h3><span data-i18n="pages.404.title_1"></span><strong data-i18n="pages.404.title_1_bold">error 404</strong></h3>
+               <h4 data-i18n="pages.404.message_1"></h4>
+            </section>
+            
+            <section class="call_to_action four-o-four"> <i class="fa fa-ambulance"></i>
+               <h3 data-i18n="pages.404.title_2"></h3>
+               <h4 data-i18n="pages.404.message_2"></h4>
+          </section>
+        </div>
+        <div class="right_column">
+            <p class="right_column_header" data-i18n="general.address_title"></p>
+            <div id="centre_info_container">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script id="centre_info_template" type="x-tmpl-mustache/text">
+    <p class="directory_content">{{name}}</p>
+    <p class="directory_content">{{address1}}</p>
+    <p class="directory_content">{{city}}, {{province_state}} {{postal_code}}</p>
+</script>
+
+
+<script src="/pages_id.js"></script>
