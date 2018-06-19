@@ -14,13 +14,13 @@
 <div  id="main_content" style="display:none">
     <nav>
         <ul class="breadcrumb" id="breadcrumb_container">
-        <script id="breadcrumb_template" type="x-tmpl-mustache/text">
-            <li><a href="/home" data-i18n="nav.home"></a> </li>
-            <li><a href="/promotions" data-i18n="nav.promotions"></a> </li>
-            <li class="active primary-locale">{{name}}</li>
-            <li class="active secondary-locale">{{name_2}}</li>
-        </script>
-    </ul>
+            <script id="breadcrumb_template" type="x-tmpl-mustache/text">
+                <li><a href="/home" data-i18n="nav.home"></a> </li>
+                <li><a href="/promotions" data-i18n="nav.promotions"></a> </li>
+                <li class="active primary-locale">{{name}}</li>
+                <li class="active secondary-locale">{{name_2}}</li>
+            </script>
+        </ul>
     </nav>
     <div class="page_banner" id="banner_container">
         <script id="banner_template" type="x-tmpl-mustache/text">
