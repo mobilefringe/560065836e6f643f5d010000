@@ -52,7 +52,10 @@
                     <span class="secondary-locale">{{name_2}}</span>
                 </p>
             </a>
-            <p class="directory_content promo_date"><a href="/stores/{{store_detail_btn}}">{{store_name}}</a><br>{{job_type}}<a href="../jobs/{{slug}}" class="btn btn-primary pull-right" style="margin-top:-17px" data-i18n="general.read_more"></a></p>
+            <p class="directory_content promo_date">
+                <a href="/stores/{{store_detail_btn}}">{{store_name}}</a><br>{{job_type}}
+                <a href="../jobs/{{slug}}" class="btn btn-primary pull-right" style="margin-top:-17px" data-i18n="general.read_more"></a>
+            </p>
              </div>
         </div>
     </div>
