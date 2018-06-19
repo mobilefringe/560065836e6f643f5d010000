@@ -4,9 +4,9 @@
 <div  id="main_content" style="display:none">
     <nav>
         <ul class="breadcrumb">
-        <li><a href="/home" data-i18n="nav.home"></a> </li>
-        <li class="active" data-i18n="nav.store_directory"></li>
-    </ul>
+            <li><a href="/home" data-i18n="nav.home"></a> </li>
+            <li class="active" data-i18n="nav.store_directory"></li>
+        </ul>
     </nav>
     <div class="page_banner" data-i18n="nav.store_directory">
     </div>
