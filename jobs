@@ -44,19 +44,19 @@
     </div>
 </div>
 <script id="promo_list_template" type="x-tmpl-mustache/text">
-                    <div class="promo_inside_content">
-                        <div class="promo_desc_box" style="width:100%">
-                            <a href="../jobs/{{slug}}">
-                                <p class="promo_header right_column_header">
-                                    <span class="primary-locale">{{name}}</span>
-                                    <span class="secondary-locale">{{name_2}}</span>
-                                </p>
-                            </a>
-                            <p class="directory_content promo_date"><a href="/stores/{{store_detail_btn}}">{{store_name}}</a><br>{{job_type}}<a href="../jobs/{{slug}}" class="btn btn-primary pull-right" style="margin-top:-17px" data-i18n="general.read_more"></a></p>
-                             </div>
-                        </div>
-                    </div>
-                </script>
+    <div class="promo_inside_content">
+        <div class="promo_desc_box" style="width:100%">
+            <a href="../jobs/{{slug}}">
+                <p class="promo_header right_column_header">
+                    <span class="primary-locale">{{name}}</span>
+                    <span class="secondary-locale">{{name_2}}</span>
+                </p>
+            </a>
+            <p class="directory_content promo_date"><a href="/stores/{{store_detail_btn}}">{{store_name}}</a><br>{{job_type}}<a href="../jobs/{{slug}}" class="btn btn-primary pull-right" style="margin-top:-17px" data-i18n="general.read_more"></a></p>
+             </div>
+        </div>
+    </div>
+</script>
  <script id="centre_info_template" type="x-tmpl-mustache/text">
                     <p class="directory_content">{{name}}</p>
                     <p class="directory_content">{{address1}}</p>
