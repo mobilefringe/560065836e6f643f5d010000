@@ -8,7 +8,8 @@
             <li class="active" data-i18n="nav.store_directory"></li>
         </ul>
     </nav>
-    <div class="page_banner" data-i18n="nav.store_directory">
+    <div class="page_banner" >
+    <h2>data-i18n="nav.store_directory"</h2>
     </div>
     <div class="inside_page_content">
         <div class="left_column">
