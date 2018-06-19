@@ -90,7 +90,7 @@
     <p class="directory_content">{{address1}}</p>
     <p class="directory_content">{{city}}, {{province_state}} {{postal_code}}</p>
     <br>
-    <div  id="mm_page_content"></div>
+    <div  id="mm_page_content_m"></div>
    
     </script>
     <script id="centre_info_template" type="x-tmpl-mustache/text">
