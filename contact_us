@@ -1,0 +1,119 @@
+<div id="loading_screen">
+    <img alt="loading" src="//kodekloud.s3.amazonaws.com/sites/5447ebb66e6f641987020000/3604f5c26997bea3de504de139debcec/loading.gif"/>
+</div>
+<div  id="main_content" style="display:none">
+    <nav>
+        <ul class="breadcrumb">
+        <li><a href="/home" data-i18n="nav.home"></a> </li>
+        <li class="active" data-i18n="nav.contact_us"></li>
+    </ul>
+    </nav>
+    <div class="page_banner" data-i18n="nav.contact_us">
+    </div>
+    <div class="inside_page_content">
+        <div class="left_column">
+            <img class="inside_banner_image" alt="banner" src="//codecloud.cdn.speedyrails.net/sites/560065836e6f643f5d010000/ee172c1e7929fc375da7520a5f8bd873/aboutus.png"/>
+            <div class="show_mobile">
+                <p class="right_column_header" data-i18n="general.address_title">centre information</p>
+                <div id="centre_info_container_mobile">
+                    
+                </div>
+            </div>
+            <div id="send_contact_success" class="alert alert-success" role="alert" style="display:none">
+              <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+              <span class="sr-only">Success</span>
+              <span data-i18n="contact_us.result.success.message"></span>
+             </div>
+             <div id="send_contact_error" class="alert alert-danger" role="alert" style="display:none">
+              <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+              <span class="sr-only" data-i18n="contact_us.result.error.title"></span>
+              <span data-i18n="contact_us.result.error.message"></span>
+             </div>
+            <form name="contact_form" id="contact_form" method="post">
+                <div class="row" style="margin-left:-15px;margin-right:-15px">
+                    <div class="col-sm-12 col-md-12">
+                        <h5 data-i18n="contact_us.form.intro_message"></h5>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <label for="name" data-i18n="contact_us.form.name"></label>
+                        <input name="name" id="name" class="form-control" type="text" value="" required>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <label for="email" data-i18n="contact_us.form.email"></label>
+                        <input name="email" id="email" class="form-control" type="text" value="" required>
+                    </div>
+                </div>
+                <br>
+                <div class="row" style="margin-left:-15px;margin-right:-15px">
+                    <div class="col-sm-12 col-md-12">
+                        <label for="subject" data-i18n="contact_us.form.subject"></label>
+                        <input name="subject" id="subject" class="form-control" type="text" required>
+                    </div>
+                </div>
+                <br>
+                <div class="row" style="margin-left:-15px;margin-right:-15px">
+                    <div class="col-sm-12 col-md-12">
+                        <label for="message" data-i18n="contact_us.form.message"></label>
+                        <textarea name="message" id="message" rows="8" class="form-control" required></textarea>
+                    </div>
+                    <div class="col-sm-12 col-md-12">
+                    <br>
+                        <label for="enterVerify"><span data-i18n="contact_us.form.captcha"></span><div id="verifyNum"></div></label><br>
+                        <input type="hidden" value="701469" id="verifyNumHidden" name="verifyNumHidden" />
+                        <input type="text" id="enterVerify" name="enterVerify" />
+                    </div>
+                </div>
+                
+                <div class="row" style="margin-left:-15px;margin-right:-15px">
+                        <div class="col-sm-12 col-md-12"><br/>
+                        <button id="submit" class="btn btn-primary" type="submit" data-i18n="contact_us.form.submit"></button>
+                    </div>
+                </div>
+                
+                
+                
+            </form>
+        </div>
+        <div class="right_column">
+            <p class="right_column_header" data-i18n="general.address_title">centre information</p>
+            <div id="centre_info_container">
+                
+            </div>
+            
+            
+        </div>
+    </div>
+</div>
+<script id="centre_info_template_mobile" type="x-tmpl-mustache/text">
+                        <p class="directory_content">{{name}}</p>
+                        <p class="directory_content">{{address1}}</p>
+                        <p class="directory_content">{{city}}, {{province_state}} {{postal_code}}</p>
+                        <br>
+                    <p class="directory_content"><strong>Andreea Rusu
+
+</strong> 
+                    <br><span data-i18n="contact_us.contact_1.title"></span>
+                    <br>514.733.8544 Ext. 228
+                    <br><a href="mailto:arusu@bentallkennedy.com
+
+">arusu@bentallkennedy.com</a></p>
+                    <br>
+                   
+                    </script>
+                    <script id="centre_info_template" type="x-tmpl-mustache/text">
+                    <p class="directory_content">{{name}}</p>
+                    <p class="directory_content">{{address1}}</p>
+                    <p class="directory_content">{{city}}, {{province_state}} {{postal_code}}</p>
+                    <br>
+                   <p class="directory_content"><strong>Andreea Rusu
+
+</strong> 
+                    <br><span data-i18n="contact_us.contact_1.title"></span>
+                    <br>514.733.8544 Ext. 228
+                    <br><a href="mailto:arusu@bentallkennedy.com
+
+">arusu@bentallkennedy.com</a></p>
+                    <br>
+               
+                </script>
+<script src="/contact_us.js"></script>
