@@ -44,7 +44,7 @@
 	},
 
 	"promotions" : {
-		"no_promotions" : "There are no promotions at this time, please check back later."
+		"no_promotions" : "There are no promotions at this time, please check back later.",
 		"read_more" : "Promotion Details"
 	},
 
