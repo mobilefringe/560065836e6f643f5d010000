@@ -382,7 +382,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 /*  display:none \9 !important;*/
 /*}*/
 
-.flex-control-paging li a {
+.flex-control-paging li a.flex-active {
     background-color: #18498d;
     color: #fff;
 }
