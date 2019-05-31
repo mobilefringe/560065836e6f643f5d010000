@@ -243,7 +243,7 @@
                <div id="site_logo"></div>
 
                <a href="#" class="btn btn-navbar btn-default navbar-toggle" onclick="javascript:toggle_menu()"><span class="nb_left pull-left"><span class="fa fa-reorder"></span></span><p style="display:none">menu</p> </a></div>
-                <div class="mobile_menu" style="display:none">
+                <nav class="mobile_menu" style="display:none">
                     <ul>
                         <li><a href="/stores" data-i18n="nav.store_directory"></a></li>
                         <li><a href="/promotions" data-i18n="nav.promotions"></a></li>
@@ -272,7 +272,7 @@
                             <a href="#" class="en-CA">en</a> | <a href="#" class="fr-CA">fr</a>
                         </li>
                     </ul>
-                </div>
+                </nav>
                 <nav class="collapse navbar-collapse">              
                     <ul class="nav pull-right navbar-nav">
                         <li><a href="/stores" data-i18n="nav.store_directory"></a></li>
