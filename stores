@@ -13,7 +13,7 @@
     </div>
     <div class="inside_page_content">
         <div class="left_column">
-            <img class="inside_banner_image" src="//codecloud.cdn.speedyrails.net/sites/560065836e6f643f5d010000/9c54b37fc53d1d9bac9a456cc12e6df4/stores.png"/>
+            <img class="inside_banner_image" alt="" src="//codecloud.cdn.speedyrails.net/sites/560065836e6f643f5d010000/9c54b37fc53d1d9bac9a456cc12e6df4/stores.png"/>
             <!--<a href="/map"><p class="right_column_header" id="mobile_centre_map_link" style="display:none">centre map</p></a><br>-->
             <div class="mobile_cat_list" style="display:none">
                 <p class="right_column_header"  data-i18n="stores.categories"></p>
