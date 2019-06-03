@@ -2,11 +2,13 @@
     <img alt="loading" src="//kodekloud.s3.amazonaws.com/sites/5447ebb66e6f641987020000/3604f5c26997bea3de504de139debcec/loading.gif"/>
 </div>
 <div  id="main_content" style="display:none">
-    <ul class="breadcrumb">
-        <li><a href="/home">Home</a> </li>
-    </ul>
+    <nav>
+        <ul class="breadcrumb">
+            <li><a href="/home">Home</a> </li>
+        </ul>
+    </nav>
     <div class="page_banner">
-        Thank You
+        <h2>Thank You</h2>
     </div>
     <div class="inside_page_content">
         <div class="left_column">
