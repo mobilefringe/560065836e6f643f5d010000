@@ -45,8 +45,8 @@
                                 <span class="secondary-locale">{{name_2}}</span>
                             </p></a>
                             <p class="directory_content promo_date">{{store_name}}<br>{{dates}}</p>
-                            
-                            <a id="store_btn" style="display:none" href="/stores/{{store_detail_btn}}" class="btn btn-primary center-block btn-lg" data-i18n="stores.view_store_details"></a>
+                            {{#store_detail_btn}}
+                            <a id="store_btn" style="display:none" href="/stores/{{store_detail_btn}}" class="btn btn-primary center-block btn-lg" data-i18n="stores.view_store_details"></a>{{/store_detail_btn}}
                         </div>
                         
                         <span class="primary-locale">{{{rich_description}}}</span>
