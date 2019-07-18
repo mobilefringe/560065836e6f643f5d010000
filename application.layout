@@ -42,7 +42,7 @@
     <script src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/application/x-javascript/1468507661000/moment-timezone-with-data.min.js"></script>
     <script src="//cdn.jsdelivr.net/jquery.zoomooz/1.1.6/jquery.zoomooz.min.js"></script>
     <script src="/console.js"></script>
-    <script src="//kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/360754705c291ba7cd4a4a18102adbaf/modernizr.custom.48287.js"></script>
+  
 
     <!--Mustache is a client side templating engine https://github.com/janl/mustache.js/ -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
@@ -436,7 +436,7 @@
 <script src="//kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/360754705c291ba7cd4a4a18102adbaf/wow.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js"></script>
 <script src="//preview-template.codecloudapp.com/restart_theme.js"></script>
-<script src="//kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/360754705c291ba7cd4a4a18102adbaf/collapser.js"></script>
+
 <script src="//cdnjs.cloudflare.com/ajax/libs/i18next/1.6.3/i18next-1.6.3.min.js"></script>
 <script>
     var current_year = moment().year();
