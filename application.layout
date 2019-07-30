@@ -59,28 +59,28 @@
 
     <style>
         /*custom styles*/
-        .bk_logo_svg {
-        width: 194px;
-        height: 70px;
-        display: block;
-        position: absolute;
-        right: 0;
-        bottom: -20px;
-        background-image: url(https://www.mallmaverick.com/system/site_images/photos/000/055/172/original/BK_Logo_Oaks.svg?1561652010);
-        background-size: 194px 95px;
-        background-repeat: no-repeat;
-    }
-      .bk_logo_svg2 {
-        width: 194px;
-        height: 70px;
-        display: block;
-        position: absolute;
-        right: 0;
-        bottom: -20px;
-        background-image: url(https://www.mallmaverick.com/system/site_images/photos/000/055/172/original/BK_Logo_Oaks.svg?1561652010);
-        background-size: 194px 95px;
-        background-repeat: no-repeat;
-    }
+          .bk_logo_svg {
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: inline-block;
+            width: 150px;
+            height: 60px;
+            background-image: url(https://www.mallmaverick.com/system/site_images/photos/000/036/590/original/BK_Logo_ProudlyManagedBy_White_final-01.svg?1517934408);
+            background-size: 100px 70px;
+            background-repeat: no-repeat;
+        }
+         .bk_logo_svg2 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: inline-block;
+            width: 150px;
+            height: 60px;
+            background-image: url(https://www.mallmaverick.com/system/site_images/photos/000/036/598/original/BK_Logo_ProudlyManagedBy_White_final_FR_2-01-01.svg?1517945952);
+            background-size: 100px 70px;
+            background-repeat: no-repeat;
+        }
         a .directory_content:hover{
             color: #999 !important;
         }
@@ -192,29 +192,11 @@
                 border-top:none !important;
             }  
              .bk_logo_svg {
-            width: 194px;
-            height: 70px;
-            display: block;
-            position: absolute;
-            right: unset;
-            left: 0;
-            bottom: -30px;
-            background-image: url(https://www.mallmaverick.com/system/site_images/photos/000/055/172/original/BK_Logo_Oaks.svg?1561652010);
-            background-size: 194px 95px;
-            background-repeat: no-repeat;
-        }
-             .bk_logo_svg2 {
-            width: 194px;
-            height: 70px;
-            display: block;
-            position: absolute;
-            right: unset;
-            left: 0;
-            bottom: -30px;
-            background-image: url(https://www.mallmaverick.com/system/site_images/photos/000/055/172/original/BK_Logo_Oaks.svg?1561652010);
-            background-size: 194px 95px;
-            background-repeat: no-repeat;
-        }
+                display: none;
+            }
+            .bk_logo_svg2 {
+                display: none;
+            }
         }
     </style>
 </head>
@@ -283,7 +265,11 @@
           </div>
           <!--<div id="social_media_wrapper"> <a href="https://www.facebook.com/10DundasEast" target="_blank"><i class="fa fa-facebook"></i><p style="display:none">facebook</p></a> <a href="https://twitter.com/10DundasEast" target="_blank"><i class="fa fa-twitter"></i><p style="display:none">twitter</p></a><a href="//instagram.com/10dundaseast" target="_blank"><i class="fa fa-instagram"></i><p style="display:none">instagram</p></a><a href="https://www.youtube.com/user/10DundasEast" target="_blank"><i class="fa fa-youtube"></i><p style="display:none">youtube</p></a></div>-->
         <div class="hidden-xs language"><a href="#" class="en-CA">en</a> | <a href="#" class="fr-CA">fr</a></div>
-       
+        <a href="//bentallkennedy.com/" target="_blank">
+            <div class="bk_logo_svg primary-locale"></div>
+           
+            <div class="bk_logo_svg2 secondary-locale"></div>
+        </a>
     </div>
 </header>
 
@@ -440,11 +426,7 @@
         <span>{{hours}}</span>
     {% endraw %}
 </script>
- <a href="//bentallkennedy.com/" target="_blank">
-            <div class="bk_logo_svg primary-locale"></div>
-           
-            <div class="bk_logo_svg2 secondary-locale"></div>
-        </a>
+
 <script src="//kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/360754705c291ba7cd4a4a18102adbaf/bootstrap.min.js"></script>
 <script src="//kodekloud.s3.amazonaws.com/sites/54612c496e6f6474ba020000/18e2e634c26a051a8eedcc896c229e80/jquery.flexslider-min.js"></script>
 <script src="//kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/360754705c291ba7cd4a4a18102adbaf/jquery.prettyPhoto.js"></script>
