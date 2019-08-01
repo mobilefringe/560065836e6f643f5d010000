@@ -60,27 +60,27 @@
     <style>
         /*custom styles*/
           .bk_logo_svg {
-            position: absolute;
-            top: 0;
-            right: 0;
-            display: inline-block;
-            width: 150px;
-            height: 60px;
-            background-image: url(https://www.mallmaverick.com/system/site_images/photos/000/036/590/original/BK_Logo_ProudlyManagedBy_White_final-01.svg?1517934408);
-            background-size: 100px 70px;
-            background-repeat: no-repeat;
-        }
-         .bk_logo_svg2 {
-            position: absolute;
-            top: 0;
-            right: 0;
-            display: inline-block;
-            width: 150px;
-            height: 60px;
-            background-image: url(https://www.mallmaverick.com/system/site_images/photos/000/036/598/original/BK_Logo_ProudlyManagedBy_White_final_FR_2-01-01.svg?1517945952);
-            background-size: 100px 70px;
-            background-repeat: no-repeat;
-        }
+        width: 194px;
+        height: 70px;
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: -5px;
+        background-image: url(https://www.mallmaverick.com/system/site_images/photos/000/055/172/original/BK_Logo_Oaks.svg?1561652010);
+        background-size: 194px 95px;
+        background-repeat: no-repeat;
+    }
+       .bk_logo_svg2 {
+        width: 194px;
+        height: 70px;
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: -5px;
+        background-image: url(https://www.mallmaverick.com/system/site_images/photos/000/056/127/original/logo-bgo-proudly-managed-by-black-fr.svg?1564680774);
+        background-size: 194px 95px;
+        background-repeat: no-repeat;
+    }
         a .directory_content:hover{
             color: #999 !important;
         }
