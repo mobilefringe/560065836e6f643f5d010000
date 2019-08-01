@@ -192,11 +192,29 @@
                 border-top:none !important;
             }  
              .bk_logo_svg {
-                display: none;
-            }
-            .bk_logo_svg2 {
-                display: none;
-            }
+            width: 194px;
+            height: 70px;
+            display: block;
+            position: absolute;
+            right: unset;
+            left: 0;
+            bottom: -30px;
+            background-image: url(https://www.mallmaverick.com/system/site_images/photos/000/055/172/original/BK_Logo_Oaks.svg?1561652010);
+            background-size: 194px 95px;
+            background-repeat: no-repeat;
+        }
+             .bk_logo_svg2 {
+            width: 194px;
+            height: 70px;
+            display: block;
+            position: absolute;
+            right: unset;
+            left: 0;
+            bottom: -30px;
+            background-image: url(https://www.mallmaverick.com/system/site_images/photos/000/056/127/original/logo-bgo-proudly-managed-by-black-fr.svg?1564680774);
+            background-size: 194px 95px;
+            background-repeat: no-repeat;
+        }
         }
     </style>
 </head>
@@ -266,9 +284,7 @@
           <!--<div id="social_media_wrapper"> <a href="https://www.facebook.com/10DundasEast" target="_blank"><i class="fa fa-facebook"></i><p style="display:none">facebook</p></a> <a href="https://twitter.com/10DundasEast" target="_blank"><i class="fa fa-twitter"></i><p style="display:none">twitter</p></a><a href="//instagram.com/10dundaseast" target="_blank"><i class="fa fa-instagram"></i><p style="display:none">instagram</p></a><a href="https://www.youtube.com/user/10DundasEast" target="_blank"><i class="fa fa-youtube"></i><p style="display:none">youtube</p></a></div>-->
         <div class="hidden-xs language"><a href="#" class="en-CA">en</a> | <a href="#" class="fr-CA">fr</a></div>
         <a href="//bentallkennedy.com/" target="_blank">
-            <div class="bk_logo_svg primary-locale"></div>
-           
-            <div class="bk_logo_svg2 secondary-locale"></div>
+            
         </a>
     </div>
 </header>
@@ -426,6 +442,9 @@
         <span>{{hours}}</span>
     {% endraw %}
 </script>
+<div class="bk_logo_svg primary-locale"></div>
+           
+            <div class="bk_logo_svg2 secondary-locale"></div>
 
 <script src="//kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/360754705c291ba7cd4a4a18102adbaf/bootstrap.min.js"></script>
 <script src="//kodekloud.s3.amazonaws.com/sites/54612c496e6f6474ba020000/18e2e634c26a051a8eedcc896c229e80/jquery.flexslider-min.js"></script>
