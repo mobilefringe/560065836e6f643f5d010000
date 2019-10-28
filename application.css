@@ -19,6 +19,11 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+
+*:focus {
+    outline: auto 5px -webkit-focus-ring-color;
+}
+
 body {
   margin: 0;
 }
