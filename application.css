@@ -6678,6 +6678,7 @@ header .container {
   background-color: transparent !important;
   border-bottom: solid 1px transparent;
   color:white;
+  color: red !important;
 }
 .navbar .nav li a:hover,
 .navbar .nav li a:active {
@@ -6685,6 +6686,7 @@ header .container {
   /* -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0.067);
   box-shadow: 0 0px 0px rgba(0, 0, 0, 0.067); */
   color: #c8c8c8;
+  color: red !important;
 
 }
 .navbar .nav li.active a,
