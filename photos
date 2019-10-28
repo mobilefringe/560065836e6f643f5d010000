@@ -48,10 +48,6 @@
             <img alt="{{name}}" src="{{alt_url}}"/>
         </a>
     </div>
-    ff
-    {{#description}}
-        Never shown!
-    {{/description}}
 </script>
 <script id="centre_info_template" type="x-tmpl-mustache/text">
     <p class="directory_content">{{name}}</p>
