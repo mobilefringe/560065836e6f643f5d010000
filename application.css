@@ -6685,7 +6685,6 @@ header .container {
   /* -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0.067);
   box-shadow: 0 0px 0px rgba(0, 0, 0, 0.067); */
   color: #c8c8c8;
-  color: red !important;
 
 }
 .navbar .nav li.active a,
