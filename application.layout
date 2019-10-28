@@ -190,7 +190,7 @@
             color: #FFF !important;
             text-decoration: underline;
         }
-        .navbar .dropdown-menu a:hover {
+        .navbar .nav .dropdown-menu li a:hover {
             color: #666 !important;
             text-decoration: underline;
         }
