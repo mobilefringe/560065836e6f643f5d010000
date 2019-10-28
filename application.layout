@@ -178,7 +178,7 @@
             color: #18498d ;
         }
         .navbar .nav li a:hover {
-            color:#999999 !important;
+            text-decoration: underline;
         }
         .site-map-section a:hover {
         }
