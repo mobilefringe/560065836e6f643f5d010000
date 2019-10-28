@@ -46,6 +46,10 @@
     <div class="portfolio_item"> 
         <a href="{{alt_url}}" rel="lightbox-gallery" title="{{name}}">
             <img alt="{{name}}" src="{{alt_url}}"/>
+            
+            {{#description}}
+                Never shown!
+            {{/description}}
         </a>
      </div>
 </script>
