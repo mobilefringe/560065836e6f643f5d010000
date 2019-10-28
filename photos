@@ -48,6 +48,7 @@
             <img alt="{{name}}" src="{{alt_url}}"/>
         </a>
     </div>
+    ff
     {{#description}}
         Never shown!
     {{/description}}
