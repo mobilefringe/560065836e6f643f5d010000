@@ -202,6 +202,9 @@
         }
         #footer_teasers_wrapper .footer_teaser a {
             font-size: 13px;
+            color: #ccc;
+        }
+        .search-results a {
             color: #000;
         }
         #footer_teasers_wrapper .footer_teaser a:hover {
