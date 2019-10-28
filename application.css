@@ -337,6 +337,22 @@ th {
 ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;    
 }
+
+
+ul.nav li.dropdown:hover > ul.dropdown-menu,
+    ul.nav li.dropdown:focus > ul.dropdown-menu,
+    ul.dropdown-menu:hover,
+    ul.dropdown-menu.focus {
+        display: block;
+    }
+}
+
+/*for non-IE to allow tabable display on dropdown menu*/
+ul.nav li.dropdown:focus-within > ul.dropdown-menu {
+    display: block;
+}
+
+
 .gmap{
     width:100%;
     border:none;
