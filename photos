@@ -46,12 +46,11 @@
     <div class="portfolio_item"> 
         <a href="{{alt_url}}" rel="lightbox-gallery" title="{{name}}">
             <img alt="{{name}}" src="{{alt_url}}"/>
-            
-            {{#description}}
-                Never shown!
-            {{/description}}
         </a>
-     </div>
+    </div>
+    {{#description}}
+        Never shown!
+    {{/description}}
 </script>
 <script id="centre_info_template" type="x-tmpl-mustache/text">
     <p class="directory_content">{{name}}</p>
