@@ -190,6 +190,11 @@
             color: #FFF !important;
             text-decoration: underline;
         }
+        .navbar .dropdown-menu a:hover {
+            color: #666 !important;
+            text-decoration: underline;
+        }
+        
         .site-map-section a:hover {
         }
         .primary-locale, .secondary-locale {
