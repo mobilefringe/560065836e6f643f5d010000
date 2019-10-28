@@ -204,8 +204,8 @@
             font-size: 13px;
             color: #ccc;
         }
-        #footer_teasers_wrapper .results-div a {
-            color: #000;
+        .results_div a {
+            color: #000 !important;
         }
         #footer_teasers_wrapper .footer_teaser a:hover {
             color: #ccc !important;
