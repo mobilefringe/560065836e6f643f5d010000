@@ -66,7 +66,7 @@
         position: absolute;
         right: 0;
         bottom: -5px;
-        background-image: url(https://www.mallmaverick.com/system/site_images/photos/000/055/172/original/BK_Logo_Oaks.svg?1561652010);
+        background-image: url(https://www.assets.mallmaverick.com/system/site_images/photos/000/055/172/original/BK_Logo_Oaks.svg?1561652010);
         background-size: 194px 95px;
         background-repeat: no-repeat;
     }
@@ -77,7 +77,7 @@
         position: absolute;
         right: 0;
         bottom: -5px;
-        background-image: url(https://www.mallmaverick.com/system/site_images/photos/000/056/127/original/logo-bgo-proudly-managed-by-black-fr.svg?1564680774);
+        background-image: url(https://www.assets.mallmaverick.com/system/site_images/photos/000/056/127/original/logo-bgo-proudly-managed-by-black-fr.svg?1564680774);
         background-size: 194px 95px;
         background-repeat: no-repeat;
     }
@@ -199,7 +199,7 @@
             right: unset;
             left: 0;
             bottom: -30px;
-            background-image: url(https://www.mallmaverick.com/system/site_images/photos/000/055/172/original/BK_Logo_Oaks.svg?1561652010);
+            background-image: url(https://www.assets.mallmaverick.com/system/site_images/photos/000/055/172/original/BK_Logo_Oaks.svg?1561652010);
             background-size: 194px 95px;
             background-repeat: no-repeat;
         }
@@ -211,7 +211,7 @@
             right: unset;
             left: 0;
             bottom: -30px;
-            background-image: url(https://www.mallmaverick.com/system/site_images/photos/000/056/127/original/logo-bgo-proudly-managed-by-black-fr.svg?1564680774);
+            background-image: url(https://www.assets.mallmaverick.com/system/site_images/photos/000/056/127/original/logo-bgo-proudly-managed-by-black-fr.svg?1564680774);
             background-size: 194px 95px;
             background-repeat: no-repeat;
         }
