@@ -75,6 +75,13 @@ $(document).ready(function() {
             $("#anchor_id").click();
             $("#scroll_to_marker").click();
         });
+        // dynamic banner 
+        var bannerInfo = getRepoDetailsByName('Store Details Banner')
+        var bannerImageUrl = bannerInfo.images[0].image_url
+        if (bannerImageUrl) {
+            $(".inside_banner_image2").attr("src", bannerImageUrl);
+        }
+            
         $.getScript("//cdn.jsdelivr.net/slimbox/2.0.5/js/slimbox2.js");
         $('head').append('<link rel="stylesheet" href="//cdn.jsdelivr.net/slimbox/2.0.5/css/slimbox2.css" type="text/css" media="screen" />');
         $(document).trigger('render:complete');
